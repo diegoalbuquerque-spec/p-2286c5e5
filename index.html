@@ -437,15 +437,15 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
 
     <div class="note">
       <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.4"/><path d="M8 4.6v4.2M8 11.2v.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 15/10/2026 18h51. São 1210 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
+      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 16/10/2026 12h40. São 1221 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
     </div>
 
     <div class="filters">
       <div class="ctl range">
         <span class="k">Período</span>
-        <input type="date" id="f-from" aria-label="Data inicial" min="2026-06-26" max="2026-10-14" value="2026-06-26">
+        <input type="date" id="f-from" aria-label="Data inicial" min="2026-06-26" max="2026-10-16" value="2026-06-26">
         <span class="dash">–</span>
-        <input type="date" id="f-to" aria-label="Data final" min="2026-06-26" max="2026-10-14" value="2026-10-14">
+        <input type="date" id="f-to" aria-label="Data final" min="2026-06-26" max="2026-10-16" value="2026-10-16">
       </div>
       <div class="ctl">
         <span class="k">Retorno</span>
@@ -593,7 +593,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
 (function () {
   "use strict";
 
-  var TODAY = "2026-10-15";
+  var TODAY = "2026-10-16";
   var ROWS = [
     { d: "2026-06-26", sol: "Diego Albuquerque", totvs: "123456", forn: "", prot: "1782516457", comp: "Sim", valor: 1256, ret: "Incorreto", venc: null },
     { d: "2026-06-30", sol: "Rafaella Rodrigues", totvs: "2222222", forn: "", prot: "1782827638", comp: "Sim", valor: 42556.2, ret: "Correto", venc: null },
@@ -1804,7 +1804,18 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     { d: "2026-10-14", sol: "David Casal", totvs: "866", forn: "LSP FRANCHISING E SERVICOS LTDA.", prot: "1792002646", comp: "Sim", valor: 2915.52, ret: "Correto", venc: "2026-10-30" },
     { d: "2026-10-14", sol: "Fernanda Eusebio", totvs: "1645", forn: "SINTAPPI", prot: "1792005881", comp: "Sim", valor: 16518.38, ret: "Correto", venc: "2026-10-16" },
     { d: "2026-10-14", sol: "Angel Francischini", totvs: "1646", forn: "RICARDO MANUEL GOMES TECNOLOGIA DA INFORMACAO LTDA - 60.372.300/0001-23", prot: "1792009112", comp: "Não", valor: 4854.95, ret: "Correto", venc: "2026-10-15" },
-    { d: "2026-10-14", sol: "Angel Francischini", totvs: "1647", forn: "M C LOGISTICA INTELIGENTE LTDA - 45.372.816/0001-84", prot: "1792009944", comp: "Não", valor: 482.84, ret: "Correto", venc: "2026-10-15" }
+    { d: "2026-10-14", sol: "Angel Francischini", totvs: "1647", forn: "M C LOGISTICA INTELIGENTE LTDA - 45.372.816/0001-84", prot: "1792009944", comp: "Não", valor: 482.84, ret: "Correto", venc: "2026-10-15" },
+    { d: "2026-10-15", sol: "Vitor Miranda", totvs: "1639", forn: "ROADCARD INST DE PGTO INT DA LOG S/A", prot: "1792065968", comp: "Não", valor: 14036.25, ret: "Correto", venc: "2026-10-10" },
+    { d: "2026-10-15", sol: "David Casal", totvs: "1416", forn: "FACO SERRALHERIA LTDA", prot: "1792075728", comp: "Sim", valor: 3980, ret: "Correto", venc: "2026-10-26" },
+    { d: "2026-10-15", sol: "David Casal", totvs: "866", forn: "LSP FRANCHISING E SERVICOS LTDA.", prot: "1792076474", comp: "Sim", valor: 2915.52, ret: "Correto", venc: "2026-10-30" },
+    { d: "2026-10-15", sol: "David Casal", totvs: "1523", forn: "ASSAN F.SALIM PAPELARIA", prot: "1792081936", comp: "Sim", valor: 12864, ret: "Correto", venc: "2026-10-20" },
+    { d: "2026-10-15", sol: "David Casal", totvs: "1523", forn: "ASSAN F.SALIM PAPELARIA", prot: "1792082122", comp: "Sim", valor: 6432, ret: "Correto", venc: "2026-11-27" },
+    { d: "2026-10-15", sol: "Keyla Santos", totvs: "1653", forn: "METADADOS - NF: 135665", prot: "1792089443", comp: "Não", valor: 259.05, ret: "Correto", venc: "2026-10-26" },
+    { d: "2026-10-15", sol: "Keyla Santos", totvs: "1654", forn: "Prudential Seguro", prot: "1792089915", comp: "Não", valor: 3937.68, ret: "Correto", venc: "2026-11-16" },
+    { d: "2026-10-15", sol: "Keyla Santos", totvs: "1655", forn: "METADADOS - NF: 135328", prot: "1792090446", comp: "Não", valor: 9681.8, ret: "Correto", venc: "2026-10-20" },
+    { d: "2026-10-15", sol: "Keyla Santos", totvs: "1656", forn: "UBER DO BRASIL", prot: "1792091332", comp: "Não", valor: 10356.48, ret: "Correto", venc: "2026-11-05" },
+    { d: "2026-10-15", sol: "Keyla Santos", totvs: "1657", forn: "ONFLY TECNOLOGIA - NF: 127374", prot: "1792092052", comp: "Não", valor: 22176.61, ret: "Correto", venc: "2026-10-22" },
+    { d: "2026-10-16", sol: "Vitor Miranda", totvs: "1634", forn: "JRL TRANSPORTES DE CARGAS LTDA", prot: "1792162595", comp: "Não", valor: 109405.66, ret: "Correto", venc: "2026-10-15" }
   ];
 
   var RET = ["Correto", "Incorreto", "Sem retorno"];
@@ -2100,7 +2111,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     q: document.getElementById("f-q"),
     count: document.getElementById("f-count"), clear: document.getElementById("f-clear")
   };
-  var DEFAULTS = { from: "2026-06-26", to: "2026-10-14" };
+  var DEFAULTS = { from: "2026-06-26", to: "2026-10-16" };
 
   function fillSelect(el, values) {
     values.forEach(function (v) {
