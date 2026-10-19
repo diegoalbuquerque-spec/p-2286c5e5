@@ -437,15 +437,15 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
 
     <div class="note">
       <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.4"/><path d="M8 4.6v4.2M8 11.2v.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 18/10/2026 18h08. São 1224 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
+      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 19/10/2026 14h50. São 1229 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
     </div>
 
     <div class="filters">
       <div class="ctl range">
         <span class="k">Período</span>
-        <input type="date" id="f-from" aria-label="Data inicial" min="2026-06-26" max="2026-10-16" value="2026-06-26">
+        <input type="date" id="f-from" aria-label="Data inicial" min="2026-06-26" max="2026-10-19" value="2026-06-26">
         <span class="dash">–</span>
-        <input type="date" id="f-to" aria-label="Data final" min="2026-06-26" max="2026-10-16" value="2026-10-16">
+        <input type="date" id="f-to" aria-label="Data final" min="2026-06-26" max="2026-10-19" value="2026-10-19">
       </div>
       <div class="ctl">
         <span class="k">Retorno</span>
@@ -593,7 +593,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
 (function () {
   "use strict";
 
-  var TODAY = "2026-10-18";
+  var TODAY = "2026-10-19";
   var ROWS = [
     { d: "2026-06-26", sol: "Diego Albuquerque", totvs: "123456", forn: "", prot: "1782516457", comp: "Sim", valor: 1256, ret: "Incorreto", venc: null },
     { d: "2026-06-30", sol: "Rafaella Rodrigues", totvs: "2222222", forn: "", prot: "1782827638", comp: "Sim", valor: 42556.2, ret: "Correto", venc: null },
@@ -1818,7 +1818,12 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     { d: "2026-10-15", sol: "Keyla Santos", totvs: "1657", forn: "ONFLY TECNOLOGIA - NF: 127374", prot: "1792092052", comp: "Não", valor: 22176.61, ret: "Correto", venc: "2026-10-22" },
     { d: "2026-10-15", sol: "Keyla Santos", totvs: "1658", forn: "GYMPASS/WELLHUB - NF: 1278943", prot: "1792092748", comp: "Não", valor: 2400.75, ret: "Correto", venc: "2026-10-31" },
     { d: "2026-10-16", sol: "Gabriel dos Anjos", totvs: "1390", forn: "Bling", prot: "1792160829", comp: "Não", valor: 200, ret: "Incorreto", venc: "2026-10-20" },
-    { d: "2026-10-16", sol: "Vitor Miranda", totvs: "1634", forn: "JRL TRANSPORTES DE CARGAS LTDA", prot: "1792162595", comp: "Não", valor: 109405.66, ret: "Correto", venc: "2026-10-15" }
+    { d: "2026-10-16", sol: "Vitor Miranda", totvs: "1634", forn: "JRL TRANSPORTES DE CARGAS LTDA", prot: "1792162595", comp: "Não", valor: 109405.66, ret: "Correto", venc: "2026-10-15" },
+    { d: "2026-10-16", sol: "Kelly Diniz", totvs: "378", forn: "SAAE - SERVIÇO AUTONOMO DE AGUA E ESGOTO", prot: "1792163816", comp: "Sim", valor: 134.55, ret: "Correto", venc: "2026-10-13" },
+    { d: "2026-10-16", sol: "Márcio Seixas", totvs: "1563", forn: "GEOAMBIENTE SENSORIAMENTO REMOTO LTDA", prot: "1792186632", comp: "Não", valor: 1456.31, ret: "Correto", venc: "2026-10-21" },
+    { d: "2026-10-16", sol: "Vitor Miranda", totvs: "1640", forn: "BRK GERENCIAMENTO DE RISCOS LTDA", prot: "1792189229", comp: "Não", valor: 2889.92, ret: "Correto", venc: "2026-10-17" },
+    { d: "2026-10-19", sol: "Jaqueline Tomaz", totvs: "1659", forn: "caixa economica", prot: "1792409600", comp: "Não", valor: 148234.16, ret: "Correto", venc: "2026-10-20" },
+    { d: "2026-10-19", sol: "Keyla Santos", totvs: "1660", forn: "Solides Tecnologia - BOLETO", prot: "1792411040", comp: "Não", valor: 175.91, ret: "Correto", venc: "2026-10-20" }
   ];
 
   var RET = ["Correto", "Incorreto", "Sem retorno"];
@@ -2114,7 +2119,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     q: document.getElementById("f-q"),
     count: document.getElementById("f-count"), clear: document.getElementById("f-clear")
   };
-  var DEFAULTS = { from: "2026-06-26", to: "2026-10-16" };
+  var DEFAULTS = { from: "2026-06-26", to: "2026-10-19" };
 
   function fillSelect(el, values) {
     values.forEach(function (v) {
