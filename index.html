@@ -437,15 +437,15 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
 
     <div class="note">
       <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.4"/><path d="M8 4.6v4.2M8 11.2v.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 19/10/2026 19h40. São 1235 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
+      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 20/10/2026 12h55. São 1240 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
     </div>
 
     <div class="filters">
       <div class="ctl range">
         <span class="k">Período</span>
-        <input type="date" id="f-from" aria-label="Data inicial" min="2026-06-26" max="2026-10-19" value="2026-06-26">
+        <input type="date" id="f-from" aria-label="Data inicial" min="2026-06-26" max="2026-10-20" value="2026-06-26">
         <span class="dash">–</span>
-        <input type="date" id="f-to" aria-label="Data final" min="2026-06-26" max="2026-10-19" value="2026-10-19">
+        <input type="date" id="f-to" aria-label="Data final" min="2026-06-26" max="2026-10-20" value="2026-10-20">
       </div>
       <div class="ctl">
         <span class="k">Retorno</span>
@@ -593,7 +593,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
 (function () {
   "use strict";
 
-  var TODAY = "2026-10-19";
+  var TODAY = "2026-10-20";
   var ROWS = [
     { d: "2026-06-26", sol: "Diego Albuquerque", totvs: "123456", forn: "", prot: "1782516457", comp: "Sim", valor: 1256, ret: "Incorreto", venc: null },
     { d: "2026-06-30", sol: "Rafaella Rodrigues", totvs: "2222222", forn: "", prot: "1782827638", comp: "Sim", valor: 42556.2, ret: "Correto", venc: null },
@@ -1829,7 +1829,12 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     { d: "2026-10-19", sol: "Jaqueline Tomaz", totvs: "1667", forn: "caixa economica", prot: "1792424755", comp: "Não", valor: 9613.58, ret: "Correto", venc: "2026-10-20" },
     { d: "2026-10-19", sol: "Jaqueline Tomaz", totvs: "1668", forn: "caixa economica", prot: "1792424928", comp: "Não", valor: 2751.99, ret: "Correto", venc: "2026-10-20" },
     { d: "2026-10-19", sol: "David Casal", totvs: "194", forn: "CEMIG DISTRIBUICAO S.A", prot: "1792427786", comp: "Sim", valor: 1904.31, ret: "Correto", venc: "2026-10-22" },
-    { d: "2026-10-19", sol: "David Casal", totvs: "194", forn: "CEMIG DISTRIBUICAO S.A", prot: "1792428532", comp: "Sim", valor: 402.63, ret: "Correto", venc: "2026-10-22" }
+    { d: "2026-10-19", sol: "David Casal", totvs: "194", forn: "CEMIG DISTRIBUICAO S.A", prot: "1792428532", comp: "Sim", valor: 402.63, ret: "Correto", venc: "2026-10-22" },
+    { d: "2026-10-19", sol: "Jonathan", totvs: "1671", forn: "Aparecido Cordeiro", prot: "1792438716", comp: "Sim", valor: 5100, ret: "Correto", venc: "2026-10-21" },
+    { d: "2026-10-20", sol: "Jonathan", totvs: "304", forn: "Vivo Internet", prot: "1792502997", comp: "Não", valor: 99.99, ret: "Correto", venc: "2026-10-21" },
+    { d: "2026-10-20", sol: "Jonathan", totvs: "304", forn: "Vivo Internet", prot: "1792503063", comp: "Não", valor: 99.99, ret: "Correto", venc: "2026-10-21" },
+    { d: "2026-10-20", sol: "Jonathan", totvs: "276", forn: "Vivo internet", prot: "1792503116", comp: "Não", valor: 99.99, ret: "Correto", venc: "2026-10-21" },
+    { d: "2026-10-20", sol: "Márcio Seixas", totvs: "1675", forn: "NS TECNOLOGIA LTDA", prot: "1792504036", comp: "Não", valor: 2886.72, ret: "Correto", venc: "2026-10-20" }
   ];
 
   var RET = ["Correto", "Incorreto", "Sem retorno"];
@@ -2125,7 +2130,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     q: document.getElementById("f-q"),
     count: document.getElementById("f-count"), clear: document.getElementById("f-clear")
   };
-  var DEFAULTS = { from: "2026-06-26", to: "2026-10-19" };
+  var DEFAULTS = { from: "2026-06-26", to: "2026-10-20" };
 
   function fillSelect(el, values) {
     values.forEach(function (v) {
