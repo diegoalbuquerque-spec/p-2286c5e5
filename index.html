@@ -437,15 +437,15 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
 
     <div class="note">
       <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.4"/><path d="M8 4.6v4.2M8 11.2v.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 21/10/2026 13h11. São 1249 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
+      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 21/10/2026 19h01. São 1255 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
     </div>
 
     <div class="filters">
       <div class="ctl range">
         <span class="k">Período</span>
-        <input type="date" id="f-from" aria-label="Data inicial" min="2026-06-26" max="2026-10-20" value="2026-06-26">
+        <input type="date" id="f-from" aria-label="Data inicial" min="2026-06-26" max="2026-10-21" value="2026-06-26">
         <span class="dash">–</span>
-        <input type="date" id="f-to" aria-label="Data final" min="2026-06-26" max="2026-10-20" value="2026-10-20">
+        <input type="date" id="f-to" aria-label="Data final" min="2026-06-26" max="2026-10-21" value="2026-10-21">
       </div>
       <div class="ctl">
         <span class="k">Retorno</span>
@@ -1843,7 +1843,13 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     { d: "2026-10-20", sol: "Denise Valverde", totvs: "1530", forn: "61750246", prot: "1792517528", comp: "Não", valor: 2254, ret: "Correto", venc: "2026-11-16" },
     { d: "2026-10-20", sol: "Vitor Miranda", totvs: "1674", forn: "FRETEBRAS INTERNET E SERVICOS LTDA", prot: "1792517665", comp: "Não", valor: 1320, ret: "Correto", venc: "2026-10-25" },
     { d: "2026-10-20", sol: "Angel Francischini", totvs: "1677", forn: "RICARDO MANUEL GOMES TECNOLOGIA DA INFORMACAO LTDA - 60.372.300/0001-23", prot: "1792518098", comp: "Não", valor: 4516.97, ret: "Correto", venc: "2026-10-22" },
-    { d: "2026-10-20", sol: "Angel Francischini", totvs: "1678", forn: "M C LOGISTICA INTELIGENTE LTDA - 45.372.816/0001-84", prot: "1792518289", comp: "Não", valor: 384.84, ret: "Correto", venc: "2026-10-22" }
+    { d: "2026-10-20", sol: "Angel Francischini", totvs: "1678", forn: "M C LOGISTICA INTELIGENTE LTDA - 45.372.816/0001-84", prot: "1792518289", comp: "Não", valor: 384.84, ret: "Correto", venc: "2026-10-22" },
+    { d: "2026-10-21", sol: "Jonathan", totvs: "218", forn: "Cemig", prot: "1792592922", comp: "Não", valor: 642.64, ret: "Correto", venc: "2026-10-22" },
+    { d: "2026-10-21", sol: "Jonathan", totvs: "218", forn: "Cemig", prot: "1792593004", comp: "Não", valor: 594.73, ret: "Correto", venc: "2026-10-22" },
+    { d: "2026-10-21", sol: "Jonathan", totvs: "218", forn: "Cemig", prot: "1792593064", comp: "Não", valor: 594.42, ret: "Correto", venc: "2026-11-11" },
+    { d: "2026-10-21", sol: "Jonathan", totvs: "1683", forn: "MW Etiquetas Industria, Comercio e Representações LTDA", prot: "1792605690", comp: "Sim", valor: 11550, ret: "Correto", venc: "2026-10-26" },
+    { d: "2026-10-21", sol: "Keyla Santos", totvs: "1684", forn: "YAPP TECNOLOGIA - NF: 350", prot: "1792608816", comp: "Não", valor: 1380.94, ret: "Incorreto", venc: "2026-10-26" },
+    { d: "2026-10-21", sol: "Keyla Santos", totvs: "1685", forn: "GOWORK (Aluguel)", prot: "1792612533", comp: "Não", valor: 100, ret: "Correto", venc: "2026-10-26" }
   ];
 
   var RET = ["Correto", "Incorreto", "Sem retorno"];
@@ -2139,7 +2145,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     q: document.getElementById("f-q"),
     count: document.getElementById("f-count"), clear: document.getElementById("f-clear")
   };
-  var DEFAULTS = { from: "2026-06-26", to: "2026-10-20" };
+  var DEFAULTS = { from: "2026-06-26", to: "2026-10-21" };
 
   function fillSelect(el, values) {
     values.forEach(function (v) {
