@@ -437,15 +437,15 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
 
     <div class="note">
       <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.4"/><path d="M8 4.6v4.2M8 11.2v.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 22/10/2026 13h09. São 1255 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
+      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 22/10/2026 18h58. São 1260 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
     </div>
 
     <div class="filters">
       <div class="ctl range">
         <span class="k">Período</span>
-        <input type="date" id="f-from" aria-label="Data inicial" min="2026-06-26" max="2026-10-21" value="2026-06-26">
+        <input type="date" id="f-from" aria-label="Data inicial" min="2026-06-26" max="2026-10-22" value="2026-06-26">
         <span class="dash">–</span>
-        <input type="date" id="f-to" aria-label="Data final" min="2026-06-26" max="2026-10-21" value="2026-10-21">
+        <input type="date" id="f-to" aria-label="Data final" min="2026-06-26" max="2026-10-22" value="2026-10-22">
       </div>
       <div class="ctl">
         <span class="k">Retorno</span>
@@ -1849,7 +1849,12 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     { d: "2026-10-21", sol: "Jonathan", totvs: "218", forn: "Cemig", prot: "1792593064", comp: "Não", valor: 594.42, ret: "Correto", venc: "2026-11-11" },
     { d: "2026-10-21", sol: "Jonathan", totvs: "1683", forn: "MW Etiquetas Industria, Comercio e Representações LTDA", prot: "1792605690", comp: "Sim", valor: 11550, ret: "Correto", venc: "2026-10-26" },
     { d: "2026-10-21", sol: "Keyla Santos", totvs: "1684", forn: "YAPP TECNOLOGIA - NF: 350", prot: "1792608816", comp: "Não", valor: 1380.94, ret: "Incorreto", venc: "2026-10-26" },
-    { d: "2026-10-21", sol: "Keyla Santos", totvs: "1685", forn: "GOWORK (Aluguel)", prot: "1792612533", comp: "Não", valor: 100, ret: "Correto", venc: "2026-10-26" }
+    { d: "2026-10-21", sol: "Keyla Santos", totvs: "1685", forn: "GOWORK (Aluguel)", prot: "1792612533", comp: "Não", valor: 100, ret: "Correto", venc: "2026-10-26" },
+    { d: "2026-10-22", sol: "Jonathan", totvs: "189", forn: "Equatorial Alagoas", prot: "1792668284", comp: "Não", valor: 2743.98, ret: "Correto", venc: "2026-10-26" },
+    { d: "2026-10-22", sol: "Jonathan", totvs: "918", forn: "Super Paleteiras", prot: "1792673029", comp: "Não", valor: 800, ret: "Correto", venc: "2026-10-26" },
+    { d: "2026-10-22", sol: "Jonathan", totvs: "593", forn: "Go OFFICES LATAM", prot: "1792673948", comp: "Não", valor: 53550, ret: "Correto", venc: "2026-10-27" },
+    { d: "2026-10-22", sol: "Jonathan", totvs: "1582", forn: "MOV SERV", prot: "1792674486", comp: "Não", valor: 510.13, ret: "Correto", venc: "2026-10-27" },
+    { d: "2026-10-22", sol: "David Casal", totvs: "191", forn: "Cemig", prot: "1792675261", comp: "Sim", valor: 168.81, ret: "Correto", venc: "2026-10-26" }
   ];
 
   var RET = ["Correto", "Incorreto", "Sem retorno"];
@@ -2145,7 +2150,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     q: document.getElementById("f-q"),
     count: document.getElementById("f-count"), clear: document.getElementById("f-clear")
   };
-  var DEFAULTS = { from: "2026-06-26", to: "2026-10-21" };
+  var DEFAULTS = { from: "2026-06-26", to: "2026-10-22" };
 
   function fillSelect(el, values) {
     values.forEach(function (v) {
