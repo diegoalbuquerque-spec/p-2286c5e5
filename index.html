@@ -437,7 +437,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
 
     <div class="note">
       <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.4"/><path d="M8 4.6v4.2M8 11.2v.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 22/10/2026 18h58. São 1260 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
+      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 23/10/2026 12h59. São 1283 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
     </div>
 
     <div class="filters">
@@ -593,7 +593,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
 (function () {
   "use strict";
 
-  var TODAY = "2026-10-22";
+  var TODAY = "2026-10-23";
   var ROWS = [
     { d: "2026-06-26", sol: "Diego Albuquerque", totvs: "123456", forn: "", prot: "1782516457", comp: "Sim", valor: 1256, ret: "Incorreto", venc: null },
     { d: "2026-06-30", sol: "Rafaella Rodrigues", totvs: "2222222", forn: "", prot: "1782827638", comp: "Sim", valor: 42556.2, ret: "Correto", venc: null },
@@ -1854,7 +1854,30 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     { d: "2026-10-22", sol: "Jonathan", totvs: "918", forn: "Super Paleteiras", prot: "1792673029", comp: "Não", valor: 800, ret: "Correto", venc: "2026-10-26" },
     { d: "2026-10-22", sol: "Jonathan", totvs: "593", forn: "Go OFFICES LATAM", prot: "1792673948", comp: "Não", valor: 53550, ret: "Correto", venc: "2026-10-27" },
     { d: "2026-10-22", sol: "Jonathan", totvs: "1582", forn: "MOV SERV", prot: "1792674486", comp: "Não", valor: 510.13, ret: "Correto", venc: "2026-10-27" },
-    { d: "2026-10-22", sol: "David Casal", totvs: "191", forn: "Cemig", prot: "1792675261", comp: "Sim", valor: 168.81, ret: "Correto", venc: "2026-10-26" }
+    { d: "2026-10-22", sol: "David Casal", totvs: "191", forn: "Cemig", prot: "1792675261", comp: "Sim", valor: 168.81, ret: "Correto", venc: "2026-10-26" },
+    { d: "2026-10-22", sol: "David Casal", totvs: "229", forn: "ENERGISA MATO GROSSO DO SUL - DISTRIBUIDORA DE ENE", prot: "1792676084", comp: "Sim", valor: 165.24, ret: "Correto", venc: "2026-10-26" },
+    { d: "2026-10-22", sol: "David Casal", totvs: "229", forn: "ENERGISA MATO GROSSO DO SUL - DISTRIBUIDORA DE ENE", prot: "1792676551", comp: "Sim", valor: 161.8, ret: "Correto", venc: "2026-11-11" },
+    { d: "2026-10-22", sol: "Jonathan", totvs: "1690", forn: "Click Store", prot: "1792677927", comp: "Não", valor: 2635.3, ret: "Correto", venc: "2026-10-27" },
+    { d: "2026-10-22", sol: "David Casal", totvs: "593", forn: "GO OFFICES LATAM S/A", prot: "1792678147", comp: "Sim", valor: 53550, ret: "Correto", venc: "2026-10-26" },
+    { d: "2026-10-22", sol: "David Casal", totvs: "381", forn: "VERO S.A.", prot: "1792678490", comp: "Sim", valor: 127, ret: "Correto", venc: "2026-10-26" },
+    { d: "2026-10-22", sol: "David Casal", totvs: "334", forn: "CLARO NXT TELECOMUNICACOES S/A", prot: "1792678846", comp: "Não", valor: 125, ret: "Correto", venc: "2026-10-26" },
+    { d: "2026-10-22", sol: "David Casal", totvs: "1691", forn: "TOTAL EQUIPAMENTOS LTDA", prot: "1792679299", comp: "Sim", valor: 1300, ret: "Correto", venc: "2026-10-29" },
+    { d: "2026-10-22", sol: "Jonathan", totvs: "1040", forn: "12.796.770 FERNANDO MONTEIRO DA SILVA", prot: "1792680102", comp: "Não", valor: 5349, ret: "Correto", venc: "2026-10-26" },
+    { d: "2026-10-22", sol: "David Casal", totvs: "204", forn: "EQUATORIAL ALAGOAS DISTRIBUIDORA DE ENERGIA S.A.", prot: "1792682584", comp: "Sim", valor: 142, ret: "Correto", venc: "2026-10-26" },
+    { d: "2026-10-22", sol: "David Casal", totvs: "275", forn: "MASTER INTERNET", prot: "1792683863", comp: "Sim", valor: 140.66, ret: "Correto", venc: "2026-10-26" },
+    { d: "2026-10-22", sol: "David Casal", totvs: "1004", forn: "GNET MAIS TELECOM LTDA", prot: "1792684297", comp: "Sim", valor: 139.9, ret: "Correto", venc: "2026-10-26" },
+    { d: "2026-10-22", sol: "David Casal", totvs: "354", forn: "TCF - TELECOMUNICACOES CAMPO FLORIDO LTDA", prot: "1792684680", comp: "Sim", valor: 110.7, ret: "Correto", venc: "2026-10-26" },
+    { d: "2026-10-22", sol: "David Casal", totvs: "1693", forn: "YESCODE AUTOMACAO LTDA", prot: "1792685668", comp: "Sim", valor: 540, ret: "Correto", venc: "2026-11-15" },
+    { d: "2026-10-22", sol: "David Casal", totvs: "661", forn: "GC LOCACAO DE EQUIPAMENTOS LTDA.", prot: "1792685957", comp: "Sim", valor: 1797, ret: "Correto", venc: "2026-11-05" },
+    { d: "2026-10-22", sol: "David Casal", totvs: "277", forn: "COMPANHIA ITABIRANA DE TELECOMUNICACOES LTDA", prot: "1792686627", comp: "Sim", valor: 149.9, ret: "Correto", venc: "2026-10-26" },
+    { d: "2026-10-22", sol: "David Casal", totvs: "1065", forn: "CASA DA LOCACAO DE MAQUINAS E EQUIPAMENTOS LTDA", prot: "1792688851", comp: "Sim", valor: 937.98, ret: "Correto", venc: "2026-10-26" },
+    { d: "2026-10-22", sol: "David Casal", totvs: "1211", forn: "CONDOMINIO LOG II BUSINESS PARK", prot: "1792689577", comp: "Não", valor: 14478.53, ret: "Correto", venc: "2026-10-26" },
+    { d: "2026-10-22", sol: "David Casal", totvs: "1696", forn: "YESCODE AUTOMACAO LTDA", prot: "1792689973", comp: "Sim", valor: 3128, ret: "Correto", venc: "2026-11-20" },
+    { d: "2026-10-22", sol: "Jonathan", totvs: "1695", forn: "Geraldo Iradenildo", prot: "1792691544", comp: "Sim", valor: 2340, ret: "Correto", venc: "2026-10-27" },
+    { d: "2026-10-22", sol: "David Casal", totvs: "219", forn: "CEMIG DISTRIBUICAO S.A", prot: "1792691611", comp: "Sim", valor: 130.07, ret: "Correto", venc: "2026-10-26" },
+    { d: "2026-10-22", sol: "David Casal", totvs: "258", forn: "COMPANHIA DE SANEAMENTO DE MINAS GERAIS COPASA MG", prot: "1792691803", comp: "Sim", valor: 74.57, ret: "Correto", venc: "2026-10-26" },
+    { d: "2026-10-22", sol: "David Casal", totvs: "241", forn: "DEPARTAMENTO MUNICIPAL DE AGUA E ESGOTO", prot: "1792693351", comp: "Sim", valor: 87.15, ret: "Correto", venc: "2026-10-26" },
+    { d: "2026-10-22", sol: "David Casal", totvs: "318", forn: "MASTER INTERNET - CSC GESTAO INTEGRADA S/A", prot: "1792694581", comp: "Não", valor: 145.26, ret: "Correto", venc: "2026-10-26" }
   ];
 
   var RET = ["Correto", "Incorreto", "Sem retorno"];
