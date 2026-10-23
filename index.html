@@ -437,15 +437,15 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
 
     <div class="note">
       <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.4"/><path d="M8 4.6v4.2M8 11.2v.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 23/10/2026 12h59. São 1283 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
+      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 23/10/2026 18h44. São 1288 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
     </div>
 
     <div class="filters">
       <div class="ctl range">
         <span class="k">Período</span>
-        <input type="date" id="f-from" aria-label="Data inicial" min="2026-06-26" max="2026-10-22" value="2026-06-26">
+        <input type="date" id="f-from" aria-label="Data inicial" min="2026-06-26" max="2026-10-23" value="2026-06-26">
         <span class="dash">–</span>
-        <input type="date" id="f-to" aria-label="Data final" min="2026-06-26" max="2026-10-22" value="2026-10-22">
+        <input type="date" id="f-to" aria-label="Data final" min="2026-06-26" max="2026-10-23" value="2026-10-23">
       </div>
       <div class="ctl">
         <span class="k">Retorno</span>
@@ -1877,7 +1877,12 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     { d: "2026-10-22", sol: "David Casal", totvs: "219", forn: "CEMIG DISTRIBUICAO S.A", prot: "1792691611", comp: "Sim", valor: 130.07, ret: "Correto", venc: "2026-10-26" },
     { d: "2026-10-22", sol: "David Casal", totvs: "258", forn: "COMPANHIA DE SANEAMENTO DE MINAS GERAIS COPASA MG", prot: "1792691803", comp: "Sim", valor: 74.57, ret: "Correto", venc: "2026-10-26" },
     { d: "2026-10-22", sol: "David Casal", totvs: "241", forn: "DEPARTAMENTO MUNICIPAL DE AGUA E ESGOTO", prot: "1792693351", comp: "Sim", valor: 87.15, ret: "Correto", venc: "2026-10-26" },
-    { d: "2026-10-22", sol: "David Casal", totvs: "318", forn: "MASTER INTERNET - CSC GESTAO INTEGRADA S/A", prot: "1792694581", comp: "Não", valor: 145.26, ret: "Correto", venc: "2026-10-26" }
+    { d: "2026-10-22", sol: "David Casal", totvs: "318", forn: "MASTER INTERNET - CSC GESTAO INTEGRADA S/A", prot: "1792694581", comp: "Não", valor: 145.26, ret: "Correto", venc: "2026-10-26" },
+    { d: "2026-10-22", sol: "David Casal", totvs: "240", forn: "COMPANHIA DE SANEAMENTO MUNICIPAL - CESAMA", prot: "1792695996", comp: "Sim", valor: 122.77, ret: "Correto", venc: "2026-10-26" },
+    { d: "2026-10-22", sol: "David Casal", totvs: "244", forn: "AGUAS GUARIROBA SA", prot: "1792696926", comp: "Sim", valor: 642.91, ret: "Correto", venc: "2026-11-07" },
+    { d: "2026-10-22", sol: "Jonathan", totvs: "1697", forn: "Prefeitura de Divinópolis", prot: "1792697950", comp: "Não", valor: 33.32, ret: "Correto", venc: "2026-10-27" },
+    { d: "2026-10-22", sol: "Sthéfani Cruz", totvs: "1698", forn: "TOTVS S.A. - TREINAMENTO", prot: "1792703624", comp: "Sim", valor: 5282.69, ret: "Correto", venc: "2026-10-26" },
+    { d: "2026-10-23", sol: "Jonathan", totvs: "1170", forn: "Oops Telecom", prot: "1792755453", comp: "Não", valor: 99.9, ret: "Correto", venc: "2026-10-28" }
   ];
 
   var RET = ["Correto", "Incorreto", "Sem retorno"];
@@ -2173,7 +2178,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     q: document.getElementById("f-q"),
     count: document.getElementById("f-count"), clear: document.getElementById("f-clear")
   };
-  var DEFAULTS = { from: "2026-06-26", to: "2026-10-22" };
+  var DEFAULTS = { from: "2026-06-26", to: "2026-10-23" };
 
   function fillSelect(el, values) {
     values.forEach(function (v) {
