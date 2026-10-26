@@ -437,15 +437,15 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
 
     <div class="note">
       <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.4"/><path d="M8 4.6v4.2M8 11.2v.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 26/10/2026 14h44. São 1296 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
+      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 26/10/2026 19h55. São 1307 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
     </div>
 
     <div class="filters">
       <div class="ctl range">
         <span class="k">Período</span>
-        <input type="date" id="f-from" aria-label="Data inicial" min="2026-06-26" max="2026-10-23" value="2026-06-26">
+        <input type="date" id="f-from" aria-label="Data inicial" min="2026-06-26" max="2026-10-26" value="2026-06-26">
         <span class="dash">–</span>
-        <input type="date" id="f-to" aria-label="Data final" min="2026-06-26" max="2026-10-23" value="2026-10-23">
+        <input type="date" id="f-to" aria-label="Data final" min="2026-06-26" max="2026-10-26" value="2026-10-26">
       </div>
       <div class="ctl">
         <span class="k">Retorno</span>
@@ -1890,7 +1890,18 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     { d: "2026-10-23", sol: "Jonathan", totvs: "910", forn: "MICHAEL MADSON EMANUEL SIQUEIRA", prot: "1792772004", comp: "Sim", valor: 10500, ret: "Correto", venc: "2026-10-28" },
     { d: "2026-10-23", sol: "Fernanda Eusebio", totvs: "1707", forn: "SOMA COOPERATIVA", prot: "1792777198", comp: "Não", valor: 196500, ret: "Correto", venc: "2026-10-28" },
     { d: "2026-10-23", sol: "Fernanda Eusebio", totvs: "1702", forn: "SWILE DO BRASIL", prot: "1792777382", comp: "Não", valor: 72799.2, ret: "Correto", venc: "2026-10-28" },
-    { d: "2026-10-23", sol: "Fernanda Eusebio", totvs: "1703", forn: "Bradesco Saúde", prot: "1792777469", comp: "Não", valor: 223604.78, ret: "Correto", venc: "2026-11-05" }
+    { d: "2026-10-23", sol: "Fernanda Eusebio", totvs: "1703", forn: "Bradesco Saúde", prot: "1792777469", comp: "Não", valor: 223604.78, ret: "Correto", venc: "2026-11-05" },
+    { d: "2026-10-26", sol: "Jonathan", totvs: "1709", forn: "Plano Empreendimentos", prot: "1793021333", comp: "Não", valor: 19500, ret: "Correto", venc: "2026-10-29" },
+    { d: "2026-10-26", sol: "David Casal", totvs: "359", forn: "PVN PROVEDOR DE INTERNET LTDA", prot: "1793025955", comp: "Sim", valor: 133.19, ret: "Correto", venc: "2026-10-29" },
+    { d: "2026-10-26", sol: "David Casal", totvs: "359", forn: "PVN PROVEDOR DE INTERNET LTDA", prot: "1793026155", comp: "Não", valor: 133.19, ret: "Correto", venc: "2026-11-10" },
+    { d: "2026-10-26", sol: "Amanda Chagas", totvs: "1597", forn: "TMF", prot: "1793030019", comp: "Sim", valor: 20276.95, ret: "Correto", venc: "2026-10-31" },
+    { d: "2026-10-26", sol: "Amanda Chagas", totvs: "1598", forn: "TMF", prot: "1793030377", comp: "Sim", valor: 4563.38, ret: "Correto", venc: "2026-10-31" },
+    { d: "2026-10-26", sol: "Fernanda Eusebio", totvs: "1714", forn: "DEEL", prot: "1793037346", comp: "Não", valor: 209501.71, ret: "Correto", venc: "2026-10-28" },
+    { d: "2026-10-26", sol: "Jonathan", totvs: "1715", forn: "Simone Carvalho", prot: "1793040336", comp: "Sim", valor: 1953, ret: "Incorreto", venc: "2026-10-29" },
+    { d: "2026-10-26", sol: "Jonathan", totvs: "877", forn: "Simone Carvalho", prot: "1793040483", comp: "Sim", valor: 2951.87, ret: "Incorreto", venc: "2026-10-29" },
+    { d: "2026-10-26", sol: "Jonathan", totvs: "204", forn: "Equatorial", prot: "1793041008", comp: "Não", valor: 130.71, ret: "Correto", venc: "2026-10-29" },
+    { d: "2026-10-26", sol: "Gabriel dos Anjos", totvs: "1357", forn: "Correios", prot: "1793046226", comp: "Não", valor: 8681.17, ret: "Correto", venc: "2026-10-21" },
+    { d: "2026-10-26", sol: "Angel Francischini", totvs: "1716", forn: "RICARDO MANUEL GOMES TECNOLOGIA DA INFORMACAO LTDA - 60.372.300/0001-23", prot: "1793049735", comp: "Não", valor: 4599.49, ret: "Correto", venc: "2026-10-29" }
   ];
 
   var RET = ["Correto", "Incorreto", "Sem retorno"];
@@ -2186,7 +2197,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     q: document.getElementById("f-q"),
     count: document.getElementById("f-count"), clear: document.getElementById("f-clear")
   };
-  var DEFAULTS = { from: "2026-06-26", to: "2026-10-23" };
+  var DEFAULTS = { from: "2026-06-26", to: "2026-10-26" };
 
   function fillSelect(el, values) {
     values.forEach(function (v) {
