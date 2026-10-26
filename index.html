@@ -437,7 +437,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
 
     <div class="note">
       <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.4"/><path d="M8 4.6v4.2M8 11.2v.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 25/10/2026 18h17. São 1288 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
+      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 26/10/2026 14h44. São 1296 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
     </div>
 
     <div class="filters">
@@ -593,7 +593,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
 (function () {
   "use strict";
 
-  var TODAY = "2026-10-25";
+  var TODAY = "2026-10-26";
   var ROWS = [
     { d: "2026-06-26", sol: "Diego Albuquerque", totvs: "123456", forn: "", prot: "1782516457", comp: "Sim", valor: 1256, ret: "Incorreto", venc: null },
     { d: "2026-06-30", sol: "Rafaella Rodrigues", totvs: "2222222", forn: "", prot: "1782827638", comp: "Sim", valor: 42556.2, ret: "Correto", venc: null },
@@ -1838,6 +1838,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     { d: "2026-10-20", sol: "Jonathan", totvs: "304", forn: "Vivo Internet", prot: "1792502997", comp: "Não", valor: 99.99, ret: "Correto", venc: "2026-10-21" },
     { d: "2026-10-20", sol: "Jonathan", totvs: "304", forn: "Vivo Internet", prot: "1792503063", comp: "Não", valor: 99.99, ret: "Correto", venc: "2026-10-21" },
     { d: "2026-10-20", sol: "Jonathan", totvs: "276", forn: "Vivo internet", prot: "1792503116", comp: "Não", valor: 99.99, ret: "Correto", venc: "2026-10-21" },
+    { d: "2026-10-20", sol: "Jonathan", totvs: "359", forn: "DIgital VGA", prot: "1792503990", comp: "Não", valor: 129.9, ret: "Correto", venc: "2026-10-21" },
     { d: "2026-10-20", sol: "Márcio Seixas", totvs: "1675", forn: "NS TECNOLOGIA LTDA", prot: "1792504036", comp: "Não", valor: 2886.72, ret: "Correto", venc: "2026-10-20" },
     { d: "2026-10-20", sol: "Vitor Miranda", totvs: "1670", forn: "STARIAN S/A", prot: "1792516594", comp: "Não", valor: 1829.41, ret: "Correto", venc: "2026-10-20" },
     { d: "2026-10-20", sol: "Denise Valverde", totvs: "1530", forn: "61750246", prot: "1792517528", comp: "Não", valor: 2254, ret: "Correto", venc: "2026-11-16" },
@@ -1882,7 +1883,14 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     { d: "2026-10-22", sol: "David Casal", totvs: "244", forn: "AGUAS GUARIROBA SA", prot: "1792696926", comp: "Sim", valor: 642.91, ret: "Correto", venc: "2026-11-07" },
     { d: "2026-10-22", sol: "Jonathan", totvs: "1697", forn: "Prefeitura de Divinópolis", prot: "1792697950", comp: "Não", valor: 33.32, ret: "Correto", venc: "2026-10-27" },
     { d: "2026-10-22", sol: "Sthéfani Cruz", totvs: "1698", forn: "TOTVS S.A. - TREINAMENTO", prot: "1792703624", comp: "Sim", valor: 5282.69, ret: "Correto", venc: "2026-10-26" },
-    { d: "2026-10-23", sol: "Jonathan", totvs: "1170", forn: "Oops Telecom", prot: "1792755453", comp: "Não", valor: 99.9, ret: "Correto", venc: "2026-10-28" }
+    { d: "2026-10-23", sol: "Jonathan", totvs: "1170", forn: "Oops Telecom", prot: "1792755453", comp: "Não", valor: 99.9, ret: "Correto", venc: "2026-10-28" },
+    { d: "2026-10-23", sol: "Jonathan", totvs: "1700", forn: "Ferreira Costa", prot: "1792758083", comp: "Não", valor: 1559.4, ret: "Correto", venc: "2026-10-27" },
+    { d: "2026-10-23", sol: "Jonathan", totvs: "1701", forn: "Paula Angélica", prot: "1792759257", comp: "Sim", valor: 270, ret: "Correto", venc: "2026-10-28" },
+    { d: "2026-10-23", sol: "Jonathan", totvs: "1704", forn: "Carlos Alberto de Oliveira", prot: "1792764794", comp: "Sim", valor: 400, ret: "Incorreto", venc: "2026-10-28" },
+    { d: "2026-10-23", sol: "Jonathan", totvs: "910", forn: "MICHAEL MADSON EMANUEL SIQUEIRA", prot: "1792772004", comp: "Sim", valor: 10500, ret: "Correto", venc: "2026-10-28" },
+    { d: "2026-10-23", sol: "Fernanda Eusebio", totvs: "1707", forn: "SOMA COOPERATIVA", prot: "1792777198", comp: "Não", valor: 196500, ret: "Correto", venc: "2026-10-28" },
+    { d: "2026-10-23", sol: "Fernanda Eusebio", totvs: "1702", forn: "SWILE DO BRASIL", prot: "1792777382", comp: "Não", valor: 72799.2, ret: "Correto", venc: "2026-10-28" },
+    { d: "2026-10-23", sol: "Fernanda Eusebio", totvs: "1703", forn: "Bradesco Saúde", prot: "1792777469", comp: "Não", valor: 223604.78, ret: "Correto", venc: "2026-11-05" }
   ];
 
   var RET = ["Correto", "Incorreto", "Sem retorno"];
