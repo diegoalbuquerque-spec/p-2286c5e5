@@ -437,15 +437,15 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
 
     <div class="note">
       <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.4"/><path d="M8 4.6v4.2M8 11.2v.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 27/10/2026 13h56. São 1307 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
+      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 27/10/2026 19h42. São 1314 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
     </div>
 
     <div class="filters">
       <div class="ctl range">
         <span class="k">Período</span>
-        <input type="date" id="f-from" aria-label="Data inicial" min="2026-06-26" max="2026-10-26" value="2026-06-26">
+        <input type="date" id="f-from" aria-label="Data inicial" min="2026-06-26" max="2026-10-27" value="2026-06-26">
         <span class="dash">–</span>
-        <input type="date" id="f-to" aria-label="Data final" min="2026-06-26" max="2026-10-26" value="2026-10-26">
+        <input type="date" id="f-to" aria-label="Data final" min="2026-06-26" max="2026-10-27" value="2026-10-27">
       </div>
       <div class="ctl">
         <span class="k">Retorno</span>
@@ -1901,7 +1901,14 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     { d: "2026-10-26", sol: "Jonathan", totvs: "877", forn: "Simone Carvalho", prot: "1793040483", comp: "Sim", valor: 2951.87, ret: "Incorreto", venc: "2026-10-29" },
     { d: "2026-10-26", sol: "Jonathan", totvs: "204", forn: "Equatorial", prot: "1793041008", comp: "Não", valor: 130.71, ret: "Correto", venc: "2026-10-29" },
     { d: "2026-10-26", sol: "Gabriel dos Anjos", totvs: "1357", forn: "Correios", prot: "1793046226", comp: "Não", valor: 8681.17, ret: "Correto", venc: "2026-10-21" },
-    { d: "2026-10-26", sol: "Angel Francischini", totvs: "1716", forn: "RICARDO MANUEL GOMES TECNOLOGIA DA INFORMACAO LTDA - 60.372.300/0001-23", prot: "1793049735", comp: "Não", valor: 4599.49, ret: "Correto", venc: "2026-10-29" }
+    { d: "2026-10-26", sol: "Angel Francischini", totvs: "1716", forn: "RICARDO MANUEL GOMES TECNOLOGIA DA INFORMACAO LTDA - 60.372.300/0001-23", prot: "1793049735", comp: "Não", valor: 4599.49, ret: "Correto", venc: "2026-10-29" },
+    { d: "2026-10-27", sol: "Angel Francischini", totvs: "1717", forn: "M C LOGISTICA INTELIGENTE LTDA - 45.372.816/0001-84", prot: "1793102386", comp: "Não", valor: 419.91, ret: "Correto", venc: "2026-10-29" },
+    { d: "2026-10-27", sol: "David Casal", totvs: "590", forn: "LESSO LUIZ DA SILVA", prot: "1793107275", comp: "Sim", valor: 22728.62, ret: "Correto", venc: "2026-10-30" },
+    { d: "2026-10-27", sol: "David Casal", totvs: "162", forn: "MOHALLEM E LOPES CORRETAGEM E ADMINISTRACAO DE IMO", prot: "1793108434", comp: "Sim", valor: 4779, ret: "Correto", venc: "2026-10-30" },
+    { d: "2026-10-27", sol: "David Casal", totvs: "167", forn: "LOG PRESS LOGISTICA LTDA", prot: "1793111536", comp: "Sim", valor: 20121.87, ret: "Correto", venc: "2026-10-30" },
+    { d: "2026-10-27", sol: "David Casal", totvs: "384", forn: "MGNET LTDA", prot: "1793111769", comp: "Não", valor: 110.9, ret: "Correto", venc: "2026-10-30" },
+    { d: "2026-10-27", sol: "David Casal", totvs: "124", forn: "SERVICOM SEGURANCA ELETRONICA E MONITORAMENTO LTDA", prot: "1793111979", comp: "Não", valor: 187, ret: "Incorreto", venc: "2026-10-30" },
+    { d: "2026-10-27", sol: "David Casal", totvs: "124", forn: "SERVICOM SEGURANCA ELETRONICA E MONITORAMENTO LTDA", prot: "1793112050", comp: "Não", valor: 187, ret: "Incorreto", venc: "2026-10-30" }
   ];
 
   var RET = ["Correto", "Incorreto", "Sem retorno"];
@@ -2197,7 +2204,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     q: document.getElementById("f-q"),
     count: document.getElementById("f-count"), clear: document.getElementById("f-clear")
   };
-  var DEFAULTS = { from: "2026-06-26", to: "2026-10-26" };
+  var DEFAULTS = { from: "2026-06-26", to: "2026-10-27" };
 
   function fillSelect(el, values) {
     values.forEach(function (v) {
