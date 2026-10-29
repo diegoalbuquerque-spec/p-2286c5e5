@@ -437,15 +437,15 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
 
     <div class="note">
       <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.4"/><path d="M8 4.6v4.2M8 11.2v.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 28/10/2026 19h54. São 1339 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
+      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 29/10/2026 14h40. São 1351 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
     </div>
 
     <div class="filters">
       <div class="ctl range">
         <span class="k">Período</span>
-        <input type="date" id="f-from" aria-label="Data inicial" min="2026-06-26" max="2026-10-28" value="2026-06-26">
+        <input type="date" id="f-from" aria-label="Data inicial" min="2026-06-26" max="2026-10-29" value="2026-06-26">
         <span class="dash">–</span>
-        <input type="date" id="f-to" aria-label="Data final" min="2026-06-26" max="2026-10-28" value="2026-10-28">
+        <input type="date" id="f-to" aria-label="Data final" min="2026-06-26" max="2026-10-29" value="2026-10-29">
       </div>
       <div class="ctl">
         <span class="k">Retorno</span>
@@ -593,7 +593,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
 (function () {
   "use strict";
 
-  var TODAY = "2026-10-28";
+  var TODAY = "2026-10-29";
   var ROWS = [
     { d: "2026-06-26", sol: "Diego Albuquerque", totvs: "123456", forn: "", prot: "1782516457", comp: "Sim", valor: 1256, ret: "Incorreto", venc: null },
     { d: "2026-06-30", sol: "Rafaella Rodrigues", totvs: "2222222", forn: "", prot: "1782827638", comp: "Sim", valor: 42556.2, ret: "Correto", venc: null },
@@ -1919,6 +1919,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     { d: "2026-10-27", sol: "Jonathan", totvs: "1721", forn: "Rocha Peugeot e Citrone", prot: "1793122705", comp: "Sim", valor: 498, ret: "Correto", venc: "2026-10-30" },
     { d: "2026-10-27", sol: "David Casal", totvs: "1044", forn: "RESENDE E GONCALVES TECNOLOGIA LTDA", prot: "1793122963", comp: "Sim", valor: 199.9, ret: "Correto", venc: "2026-11-15" },
     { d: "2026-10-27", sol: "Jonathan", totvs: "1723", forn: "Carlos Alberto de Oliveira", prot: "1793123402", comp: "Sim", valor: 400, ret: "Correto", venc: "2026-10-30" },
+    { d: "2026-10-27", sol: "David Casal", totvs: "980", forn: "DIRECT PAPER INDUSTRIA E COMERCIO DE PAPEIS LTDA", prot: "1793124458", comp: "Sim", valor: 4871.98, ret: "Correto", venc: "2026-10-30" },
     { d: "2026-10-27", sol: "David Casal", totvs: "354", forn: "TCF - TELECOMUNICACOES CAMPO FLORIDO LTDA", prot: "1793125013", comp: "Sim", valor: 110.7, ret: "Correto", venc: "2026-10-30" },
     { d: "2026-10-27", sol: "David Casal", totvs: "748", forn: "ALMAQUINAS MANUTENCOES DE LOGISTICA LTDA", prot: "1793126038", comp: "Sim", valor: 569.32, ret: "Correto", venc: "2026-11-19" },
     { d: "2026-10-28", sol: "Kelly Diniz", totvs: "251", forn: "NIO FIBRA", prot: "1793184615", comp: "Não", valor: 130, ret: "Correto", venc: "2027-10-01" },
@@ -1928,12 +1929,23 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     { d: "2026-10-28", sol: "David Casal", totvs: "1734", forn: "LEANDRO HENRIQUE QUADRA 09518604614", prot: "1793195131", comp: "Sim", valor: 450, ret: "Incorreto", venc: "2026-10-31" },
     { d: "2026-10-28", sol: "David Casal", totvs: "124", forn: "SERVICOM SEGURANCA ELETRONICA E MONITORAMENTO LTDA", prot: "1793195226", comp: "Sim", valor: 187, ret: "Incorreto", venc: "2026-10-30" },
     { d: "2026-10-28", sol: "David Casal", totvs: "124", forn: "SERVICOM SEGURANCA ELETRONICA E MONITORAMENTO LTDA", prot: "1793195308", comp: "Sim", valor: 187, ret: "Incorreto", venc: "2026-10-30" },
+    { d: "2026-10-28", sol: "Jaqueline Tomaz", totvs: "1735", forn: "Flash tecnologia e instituição de pagamento LTDA", prot: "1793198241", comp: "Não", valor: 379671.12, ret: "Correto", venc: "2026-10-30" },
     { d: "2026-10-28", sol: "Amanda Chagas", totvs: "1738", forn: "receita federal", prot: "1793205233", comp: "Sim", valor: 217.82, ret: "Correto", venc: "2026-10-28" },
     { d: "2026-10-28", sol: "Amanda Chagas", totvs: "1739", forn: "RECEITA FEDERAL", prot: "1793205443", comp: "Sim", valor: 975.17, ret: "Correto", venc: "2026-10-28" },
     { d: "2026-10-28", sol: "Amanda Chagas", totvs: "1740", forn: "RECEITA FEDERAL", prot: "1793206096", comp: "Sim", valor: 662.05, ret: "Correto", venc: "2026-10-28" },
     { d: "2026-10-28", sol: "Amanda Chagas", totvs: "1741", forn: "RECEITA FEDERAL", prot: "1793206225", comp: "Sim", valor: 1786.75, ret: "Correto", venc: "2026-10-28" },
     { d: "2026-10-28", sol: "Amanda Chagas", totvs: "1742", forn: "RECEITA FEDERAL", prot: "1793206330", comp: "Sim", valor: 614.42, ret: "Correto", venc: "2026-10-28" },
-    { d: "2026-10-28", sol: "Amanda Chagas", totvs: "1743", forn: "RECEITA FEDERAL", prot: "1793206452", comp: "Sim", valor: 4022.05, ret: "Correto", venc: "2026-10-28" }
+    { d: "2026-10-28", sol: "Amanda Chagas", totvs: "1743", forn: "RECEITA FEDERAL", prot: "1793206452", comp: "Sim", valor: 4022.05, ret: "Correto", venc: "2026-10-28" },
+    { d: "2026-10-29", sol: "Jaqueline Tomaz", totvs: "1752", forn: "caixa economica", prot: "1793278386", comp: "Não", valor: 4.1, ret: "Incorreto", venc: "2026-10-30" },
+    { d: "2026-10-29", sol: "Jaqueline Tomaz", totvs: "1753", forn: "caixa economica", prot: "1793278473", comp: "Não", valor: 3236.36, ret: "Incorreto", venc: "2026-10-30" },
+    { d: "2026-10-29", sol: "Jaqueline Tomaz", totvs: "1754", forn: "caixa economica", prot: "1793278544", comp: "Não", valor: 3082.31, ret: "Incorreto", venc: "2026-10-30" },
+    { d: "2026-10-29", sol: "David Casal", totvs: "980", forn: "DIRECT PAPER INDUSTRIA E COMERCIO DE PAPEIS LTDA", prot: "1793279118", comp: "Sim", valor: 251.66, ret: "Correto", venc: "2026-11-20" },
+    { d: "2026-10-29", sol: "David Casal", totvs: "980", forn: "DIRECT PAPER INDUSTRIA E COMERCIO DE PAPEIS LTDA", prot: "1793279324", comp: "Sim", valor: 1426.5, ret: "Incorreto", venc: "2026-11-20" },
+    { d: "2026-10-29", sol: "David Casal", totvs: "980", forn: "DIRECT PAPER INDUSTRIA E COMERCIO DE PAPEIS LTDA", prot: "1793279441", comp: "Sim", valor: 1510, ret: "Correto", venc: "2026-11-20" },
+    { d: "2026-10-29", sol: "David Casal", totvs: "980", forn: "DIRECT PAPER INDUSTRIA E COMERCIO DE PAPEIS LTDA", prot: "1793279533", comp: "Sim", valor: 251.66, ret: "Correto", venc: "2026-11-20" },
+    { d: "2026-10-29", sol: "David Casal", totvs: "980", forn: "DIRECT PAPER INDUSTRIA E COMERCIO DE PAPEIS LTDA", prot: "1793279605", comp: "Sim", valor: 1426.5, ret: "Correto", venc: "2026-11-20" },
+    { d: "2026-10-29", sol: "David Casal", totvs: "980", forn: "DIRECT PAPER INDUSTRIA E COMERCIO DE PAPEIS LTDA", prot: "1793279704", comp: "Sim", valor: 5990, ret: "Correto", venc: "2026-11-20" },
+    { d: "2026-10-29", sol: "Amanda Chagas", totvs: "1757", forn: "prefeitura de uberlândia", prot: "1793290856", comp: "Sim", valor: 5633, ret: "Correto", venc: "2026-10-29" }
   ];
 
   var RET = ["Correto", "Incorreto", "Sem retorno"];
@@ -2229,7 +2241,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     q: document.getElementById("f-q"),
     count: document.getElementById("f-count"), clear: document.getElementById("f-clear")
   };
-  var DEFAULTS = { from: "2026-06-26", to: "2026-10-28" };
+  var DEFAULTS = { from: "2026-06-26", to: "2026-10-29" };
 
   function fillSelect(el, values) {
     values.forEach(function (v) {
