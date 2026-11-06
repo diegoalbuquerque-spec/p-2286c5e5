@@ -437,15 +437,15 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
 
     <div class="note">
       <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.4"/><path d="M8 4.6v4.2M8 11.2v.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 05/11/2026 16h08. São 1450 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
+      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 06/11/2026 15h35. São 1463 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
     </div>
 
     <div class="filters">
       <div class="ctl range">
         <span class="k">Período</span>
-        <input type="date" id="f-from" aria-label="Data inicial" min="2026-06-26" max="2026-11-05" value="2026-06-26">
+        <input type="date" id="f-from" aria-label="Data inicial" min="2026-06-26" max="2026-11-06" value="2026-06-26">
         <span class="dash">–</span>
-        <input type="date" id="f-to" aria-label="Data final" min="2026-06-26" max="2026-11-05" value="2026-11-05">
+        <input type="date" id="f-to" aria-label="Data final" min="2026-06-26" max="2026-11-06" value="2026-11-06">
       </div>
       <div class="ctl">
         <span class="k">Retorno</span>
@@ -593,7 +593,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
 (function () {
   "use strict";
 
-  var TODAY = "2026-11-05";
+  var TODAY = "2026-11-06";
   var ROWS = [
     { d: "2026-06-26", sol: "Diego Albuquerque", totvs: "123456", forn: "", prot: "1782516457", comp: "Sim", valor: 1256, ret: "Incorreto", venc: null },
     { d: "2026-06-30", sol: "Rafaella Rodrigues", totvs: "2222222", forn: "", prot: "1782827638", comp: "Sim", valor: 42556.2, ret: "Correto", venc: null },
@@ -2044,7 +2044,20 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     { d: "2026-11-04", sol: "David Casal", totvs: "1797", forn: "COLETIZE TECNOLOGIA LTDA", prot: "1793805786", comp: "Sim", valor: 3890, ret: "Correto", venc: "2026-11-13" },
     { d: "2026-11-04", sol: "David Casal", totvs: "1798", forn: "58.170.159 JOSE IVAN DA SILVA", prot: "1793808483", comp: "Sim", valor: 7558.49, ret: "Incorreto", venc: "2026-11-11" },
     { d: "2026-11-04", sol: "David Casal", totvs: "361", forn: "SILMARIO CAMPOS REZENDE", prot: "1793812570", comp: "Sim", valor: 400, ret: "Correto", venc: "2026-11-09" },
-    { d: "2026-11-05", sol: "Amanda Chagas", totvs: "1807", forn: "RECEITA FEDETAL", prot: "1793888662", comp: "Sim", valor: 70063.69, ret: "Correto", venc: "2026-11-05" }
+    { d: "2026-11-04", sol: "David Casal", totvs: "1724", forn: "BRAVA INTERNET CACERES LTDA", prot: "1793813700", comp: "Sim", valor: 120.19, ret: "Correto", venc: "2026-11-26" },
+    { d: "2026-11-04", sol: "David Casal", totvs: "299", forn: "ALARES INTERNET S/A", prot: "1793814392", comp: "Sim", valor: 114.99, ret: "Correto", venc: "2026-11-07" },
+    { d: "2026-11-04", sol: "Amanda Chagas", totvs: "1799", forn: "totvs", prot: "1793814866", comp: "Sim", valor: 541.91, ret: "Correto", venc: "2026-11-04" },
+    { d: "2026-11-04", sol: "Amanda Chagas", totvs: "1801", forn: "totvs", prot: "1793815214", comp: "Sim", valor: 5162.32, ret: "Correto", venc: "2026-11-12" },
+    { d: "2026-11-04", sol: "Amanda Chagas", totvs: "1792", forn: "VOSTOCK CONSULTORIA, AUDITORIA E ASSESSORIA LTDA", prot: "1793815543", comp: "Sim", valor: 13679.1, ret: "Correto", venc: "2026-11-10" },
+    { d: "2026-11-04", sol: "David Casal", totvs: "1065", forn: "CASA DA LOCACAO DE MAQUINAS E EQUIPAMENTOS LTDA", prot: "1793816047", comp: "Sim", valor: 937.98, ret: "Correto", venc: "2026-11-09" },
+    { d: "2026-11-04", sol: "David Casal", totvs: "1802", forn: "YESCODE AUTOMACAO LTDA", prot: "1793816600", comp: "Sim", valor: 59800, ret: "Correto", venc: "2026-11-30" },
+    { d: "2026-11-04", sol: "David Casal", totvs: "1798", forn: "58.170.159 JOSE IVAN DA SILVA", prot: "1793818250", comp: "Sim", valor: 3779.24, ret: "Incorreto", venc: "2026-11-09" },
+    { d: "2026-11-04", sol: "David Casal", totvs: "1798", forn: "58.170.159 JOSE IVAN DA SILVA", prot: "1793818368", comp: "Sim", valor: 3779.25, ret: "Incorreto", venc: "2026-11-11" },
+    { d: "2026-11-04", sol: "David Casal", totvs: "194", forn: "CEMIG DISTRIBUICAO S.A", prot: "1793818759", comp: "Sim", valor: 556.19, ret: "Correto", venc: "2026-11-09" },
+    { d: "2026-11-04", sol: "Jonathan", totvs: "644", forn: "Casa do construtor", prot: "1793821472", comp: "Sim", valor: 1099.93, ret: "Correto", venc: "2026-11-09" },
+    { d: "2026-11-05", sol: "Amanda Chagas", totvs: "1807", forn: "RECEITA FEDETAL", prot: "1793888662", comp: "Sim", valor: 70063.69, ret: "Correto", venc: "2026-11-05" },
+    { d: "2026-11-05", sol: "David Casal", totvs: "1811", forn: "58.353.119 NILTON CESAR DA SILVA", prot: "1793904116", comp: "Sim", valor: 1025, ret: "Incorreto", venc: "2026-11-09" },
+    { d: "2026-11-06", sol: "Kelly Diniz", totvs: "252", forn: "Silmaq empilhadeira", prot: "1793969138", comp: "Não", valor: 400, ret: "Correto", venc: "2026-11-09" }
   ];
 
   var RET = ["Correto", "Incorreto", "Sem retorno"];
@@ -2340,7 +2353,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     q: document.getElementById("f-q"),
     count: document.getElementById("f-count"), clear: document.getElementById("f-clear")
   };
-  var DEFAULTS = { from: "2026-06-26", to: "2026-11-05" };
+  var DEFAULTS = { from: "2026-06-26", to: "2026-11-06" };
 
   function fillSelect(el, values) {
     values.forEach(function (v) {
