@@ -437,15 +437,15 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
 
     <div class="note">
       <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.4"/><path d="M8 4.6v4.2M8 11.2v.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 09/11/2026 18h40. São 1487 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
+      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 10/11/2026 15h57. São 1513 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
     </div>
 
     <div class="filters">
       <div class="ctl range">
         <span class="k">Período</span>
-        <input type="date" id="f-from" aria-label="Data inicial" min="2026-06-26" max="2026-11-09" value="2026-06-26">
+        <input type="date" id="f-from" aria-label="Data inicial" min="2026-06-26" max="2026-11-10" value="2026-06-26">
         <span class="dash">–</span>
-        <input type="date" id="f-to" aria-label="Data final" min="2026-06-26" max="2026-11-09" value="2026-11-09">
+        <input type="date" id="f-to" aria-label="Data final" min="2026-06-26" max="2026-11-10" value="2026-11-10">
       </div>
       <div class="ctl">
         <span class="k">Retorno</span>
@@ -593,7 +593,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
 (function () {
   "use strict";
 
-  var TODAY = "2026-11-09";
+  var TODAY = "2026-11-10";
   var ROWS = [
     { d: "2026-06-26", sol: "Diego Albuquerque", totvs: "123456", forn: "", prot: "1782516457", comp: "Sim", valor: 1256, ret: "Incorreto", venc: null },
     { d: "2026-06-30", sol: "Rafaella Rodrigues", totvs: "2222222", forn: "", prot: "1782827638", comp: "Sim", valor: 42556.2, ret: "Correto", venc: null },
@@ -2081,7 +2081,33 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     { d: "2026-11-06", sol: "Amanda Chagas", totvs: "1817", forn: "PREFEITURA DE MACEIO", prot: "1794000956", comp: "Sim", valor: 218245.63, ret: "Correto", venc: "2026-11-10" },
     { d: "2026-11-06", sol: "Amanda Chagas", totvs: "1818", forn: "SECRETARIA DE MINAS GERAIS", prot: "1794001220", comp: "Sim", valor: 6736.22, ret: "Correto", venc: "2026-11-09" },
     { d: "2026-11-06", sol: "Amanda Chagas", totvs: "1819", forn: "SECRETARIA DE MINAS GERAIS", prot: "1794001396", comp: "Sim", valor: 333529.75, ret: "Correto", venc: "2026-11-09" },
-    { d: "2026-11-09", sol: "Vitor Miranda", totvs: "1814", forn: "Gertran Consultoria LTDA - EPP", prot: "1794233231", comp: "Não", valor: 906.62, ret: "Correto", venc: "2026-11-10" }
+    { d: "2026-11-09", sol: "Vitor Miranda", totvs: "1814", forn: "Gertran Consultoria LTDA - EPP", prot: "1794233231", comp: "Não", valor: 906.62, ret: "Correto", venc: "2026-11-10" },
+    { d: "2026-11-09", sol: "Vitor Miranda", totvs: "1815", forn: "Gertran Consultoria LTDA - EPP", prot: "1794233300", comp: "Não", valor: 661.24, ret: "Correto", venc: "2026-11-10" },
+    { d: "2026-11-09", sol: "David Casal", totvs: "356", forn: "COMPANHIA ENERGETICA DE PERNAMBUCO", prot: "1794240018", comp: "Sim", valor: 79.6, ret: "Correto", venc: "2026-11-13" },
+    { d: "2026-11-09", sol: "Jonathan", totvs: "1822", forn: "Mercado Pago", prot: "1794246107", comp: "Não", valor: 1649.7, ret: "Correto", venc: "2026-11-11" },
+    { d: "2026-11-09", sol: "Jonathan", totvs: "1822", forn: "Mercado Pago", prot: "1794246196", comp: "Não", valor: 785.17, ret: "Correto", venc: "2026-11-11" },
+    { d: "2026-11-09", sol: "Jonathan", totvs: "1682", forn: "Thaise Nobre", prot: "1794248105", comp: "Sim", valor: 4400, ret: "Correto", venc: "2026-11-11" },
+    { d: "2026-11-09", sol: "Jonathan", totvs: "1825", forn: "Thaise Nobre", prot: "1794248347", comp: "Sim", valor: 2200, ret: "Correto", venc: "2026-12-01" },
+    { d: "2026-11-09", sol: "Amanda Chagas", totvs: "1217", forn: "TOTVS", prot: "1794249234", comp: "Sim", valor: 515.35, ret: "Correto", venc: "2026-11-16" },
+    { d: "2026-11-09", sol: "Amanda Chagas", totvs: "1221", forn: "TOTVS", prot: "1794249408", comp: "Sim", valor: 4526.1, ret: "Correto", venc: "2026-11-16" },
+    { d: "2026-11-09", sol: "Jonathan", totvs: "1807", forn: "Guilherme Henrique", prot: "1794249726", comp: "Não", valor: 5540, ret: "Correto", venc: "2026-11-12" },
+    { d: "2026-11-09", sol: "David Casal", totvs: "1771", forn: "43.391.397 JULIO GUILHERME DA ROCHA NERY", prot: "1794252912", comp: "Sim", valor: 1620, ret: "Correto", venc: "2026-11-12" },
+    { d: "2026-11-09", sol: "Keyla Santos", totvs: "1823", forn: "GYMPASS/WELLHUB", prot: "1794256838", comp: "Não", valor: 2260.79, ret: "Correto", venc: "2026-12-01" },
+    { d: "2026-11-09", sol: "Keyla Santos", totvs: "1824", forn: "ONFLY TECNOLOGIA", prot: "1794257044", comp: "Não", valor: 16308.18, ret: "Correto", venc: "2026-11-12" },
+    { d: "2026-11-09", sol: "Keyla Santos", totvs: "1828", forn: "SINTAPPI", prot: "1794257619", comp: "Não", valor: 2366.58, ret: "Correto", venc: "2026-11-11" },
+    { d: "2026-11-09", sol: "Keyla Santos", totvs: "1832", forn: "TOTALPASS", prot: "1794257973", comp: "Não", valor: 1200, ret: "Correto", venc: "2026-11-10" },
+    { d: "2026-11-09", sol: "Keyla Santos", totvs: "1829", forn: "ONFLY TECNOLOGIA", prot: "1794258136", comp: "Não", valor: 399.9, ret: "Correto", venc: "2026-11-16" },
+    { d: "2026-11-09", sol: "Keyla Santos", totvs: "1830", forn: "LÍDER SAÚDE", prot: "1794258262", comp: "Não", valor: 11513.85, ret: "Correto", venc: "2026-11-25" },
+    { d: "2026-11-09", sol: "Keyla Santos", totvs: "1831", forn: "LTOOLS LTDA - UNIVERSIDADE AVANÇAR", prot: "1794258397", comp: "Não", valor: 1830.08, ret: "Correto", venc: "2026-11-15" },
+    { d: "2026-11-09", sol: "Angel Francischini", totvs: "1833", forn: "RICARDO MANUEL GOMES TECNOLOGIA DA INFORMACAO LTDA - 60.372.300/0001-23", prot: "1794263818", comp: "Não", valor: 4877.26, ret: "Correto", venc: "2026-11-12" },
+    { d: "2026-11-09", sol: "Angel Francischini", totvs: "1834", forn: "M C LOGISTICA INTELIGENTE LTDA - 45.372.816/0001-84", prot: "1794269104", comp: "Não", valor: 364.08, ret: "Correto", venc: "2026-11-12" },
+    { d: "2026-11-10", sol: "David Casal", totvs: "156", forn: "FUTURA EMPREENDIMENTOS E NEGOCIOS IMOBILIARIOS LTD", prot: "1794315038", comp: "Sim", valor: 6747.65, ret: "Correto", venc: "2026-11-13" },
+    { d: "2026-11-10", sol: "David Casal", totvs: "158", forn: "LJ EMPREENDIMENTOS IMOBILIARIOS LTDA", prot: "1794316330", comp: "Sim", valor: 3500, ret: "Correto", venc: "2026-11-13" },
+    { d: "2026-11-10", sol: "David Casal", totvs: "159", forn: "IGOR MANHANINI PASCHOAL", prot: "1794316719", comp: "Sim", valor: 3000, ret: "Correto", venc: "2026-11-13" },
+    { d: "2026-11-10", sol: "David Casal", totvs: "163", forn: "NIRLENE DOS REIS SILVA E ALMEIDA", prot: "1794316857", comp: "Sim", valor: 4078, ret: "Incorreto", venc: "2026-11-13" },
+    { d: "2026-11-10", sol: "David Casal", totvs: "112", forn: "ANAUAC RIBEIRO DE SOUZA", prot: "1794317118", comp: "Sim", valor: 5379.84, ret: "Correto", venc: "2026-11-13" },
+    { d: "2026-11-10", sol: "David Casal", totvs: "752", forn: "COMPANHIA ITABIRANA DE TELECOMUNICACOES LTDA", prot: "1794317850", comp: "Sim", valor: 109.9, ret: "Correto", venc: "2026-11-13" },
+    { d: "2026-11-10", sol: "David Casal", totvs: "1710", forn: "PLANO MAIOR EMPREENDIMENTOS IMOBILIARIOS LTDA", prot: "1794318419", comp: "Sim", valor: 3250, ret: "Correto", venc: "2026-11-11" }
   ];
 
   var RET = ["Correto", "Incorreto", "Sem retorno"];
@@ -2377,7 +2403,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     q: document.getElementById("f-q"),
     count: document.getElementById("f-count"), clear: document.getElementById("f-clear")
   };
-  var DEFAULTS = { from: "2026-06-26", to: "2026-11-09" };
+  var DEFAULTS = { from: "2026-06-26", to: "2026-11-10" };
 
   function fillSelect(el, values) {
     values.forEach(function (v) {
