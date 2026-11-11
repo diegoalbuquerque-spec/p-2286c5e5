@@ -437,15 +437,15 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
 
     <div class="note">
       <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.4"/><path d="M8 4.6v4.2M8 11.2v.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 10/11/2026 20h52. São 1518 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
+      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 11/11/2026 15h56. São 1541 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
     </div>
 
     <div class="filters">
       <div class="ctl range">
         <span class="k">Período</span>
-        <input type="date" id="f-from" aria-label="Data inicial" min="2026-06-26" max="2026-11-10" value="2026-06-26">
+        <input type="date" id="f-from" aria-label="Data inicial" min="2026-06-26" max="2026-11-11" value="2026-06-26">
         <span class="dash">–</span>
-        <input type="date" id="f-to" aria-label="Data final" min="2026-06-26" max="2026-11-10" value="2026-11-10">
+        <input type="date" id="f-to" aria-label="Data final" min="2026-06-26" max="2026-11-11" value="2026-11-11">
       </div>
       <div class="ctl">
         <span class="k">Retorno</span>
@@ -593,7 +593,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
 (function () {
   "use strict";
 
-  var TODAY = "2026-11-10";
+  var TODAY = "2026-11-11";
   var ROWS = [
     { d: "2026-06-26", sol: "Diego Albuquerque", totvs: "123456", forn: "", prot: "1782516457", comp: "Sim", valor: 1256, ret: "Incorreto", venc: null },
     { d: "2026-06-30", sol: "Rafaella Rodrigues", totvs: "2222222", forn: "", prot: "1782827638", comp: "Sim", valor: 42556.2, ret: "Correto", venc: null },
@@ -2112,7 +2112,30 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     { d: "2026-11-10", sol: "Pamela de Paula", totvs: "675", forn: "28.774.873 WEDERSON ALAS SIMOES DOS REIS", prot: "1794319197", comp: "Não", valor: 5600, ret: "Correto", venc: "2026-11-10" },
     { d: "2026-11-10", sol: "David Casal", totvs: "1008", forn: "FALCAO SOLUCAO EM SEGURANCA LTDA", prot: "1794319407", comp: "Sim", valor: 176.56, ret: "Correto", venc: "2026-11-13" },
     { d: "2026-11-10", sol: "David Casal", totvs: "1836", forn: "IPATINGA ALUGUEL DE EQUIPAMENTOS E MAQUINAS LTDA", prot: "1794320684", comp: "Sim", valor: 1123.76, ret: "Correto", venc: "2026-11-13" },
-    { d: "2026-11-10", sol: "David Casal", totvs: "253", forn: "COMPANHIA DE SANEAMENTO DE MINAS GERAIS COPASA MG", prot: "1794320904", comp: "Sim", valor: 44.84, ret: "Correto", venc: "2026-11-13" }
+    { d: "2026-11-10", sol: "David Casal", totvs: "253", forn: "COMPANHIA DE SANEAMENTO DE MINAS GERAIS COPASA MG", prot: "1794320904", comp: "Sim", valor: 44.84, ret: "Correto", venc: "2026-11-13" },
+    { d: "2026-11-10", sol: "David Casal", totvs: "1579", forn: "ENERGISA MINAS RIO - DISTRIBUIDORA DE ENERGIA S.A.", prot: "1794321227", comp: "Sim", valor: 238.74, ret: "Correto", venc: "2026-11-13" },
+    { d: "2026-11-10", sol: "David Casal", totvs: "157", forn: "PEDRO PAULO LOPES BOECHAT", prot: "1794321711", comp: "Sim", valor: 5700, ret: "Correto", venc: "2026-11-18" },
+    { d: "2026-11-10", sol: "Gabriel dos Anjos", totvs: "1812", forn: "Ibags", prot: "1794322769", comp: "Sim", valor: 3799.39, ret: "Correto", venc: "2026-11-09" },
+    { d: "2026-11-10", sol: "David Casal", totvs: "303", forn: "VERO S.A.", prot: "1794322803", comp: "Sim", valor: 161.96, ret: "Incorreto", venc: "2026-11-13" },
+    { d: "2026-11-10", sol: "Gabriel dos Anjos", totvs: "1838", forn: "Dry Wash", prot: "1794322812", comp: "Sim", valor: 7630.41, ret: "Correto", venc: "2026-11-11" },
+    { d: "2026-11-10", sol: "Gabriel dos Anjos", totvs: "1813", forn: "Garra Pneus", prot: "1794322854", comp: "Sim", valor: 11817.82, ret: "Correto", venc: "2026-11-09" },
+    { d: "2026-11-10", sol: "Vitor Miranda", totvs: "1800", forn: "ROADCARD INST DE PGTO INT DA LOG S/A", prot: "1794329221", comp: "Não", valor: 20603.09, ret: "Correto", venc: "2026-11-10" },
+    { d: "2026-11-10", sol: "David Casal", totvs: "238", forn: "SALES COMERCIO ATACADISTA E VAREJISTA DE MATERIAL", prot: "1794329907", comp: "Sim", valor: 300, ret: "Correto", venc: "2026-11-15" },
+    { d: "2026-11-10", sol: "Vitor Miranda", totvs: "1820", forn: "JVLOG TRANSPORTES LTDA", prot: "1794331153", comp: "Não", valor: 35000, ret: "Correto", venc: "2026-11-11" },
+    { d: "2026-11-10", sol: "David Casal", totvs: "316", forn: "TELEFONICA BRASIL S.A.", prot: "1794332061", comp: "Sim", valor: 116.42, ret: "Correto", venc: "2026-11-13" },
+    { d: "2026-11-10", sol: "David Casal", totvs: "310", forn: "ALARES INTERNET S/A", prot: "1794332514", comp: "Sim", valor: 114.99, ret: "Correto", venc: "2026-11-11" },
+    { d: "2026-11-10", sol: "David Casal", totvs: "299", forn: "ALARES INTERNET S/A", prot: "1794332984", comp: "Sim", valor: 117.48, ret: "Correto", venc: "2026-11-11" },
+    { d: "2026-11-10", sol: "David Casal", totvs: "282", forn: "ALARES INTERNET S/A", prot: "1794333093", comp: "Sim", valor: 117.5, ret: "Correto", venc: "2026-11-11" },
+    { d: "2026-11-10", sol: "Jonathan", totvs: "1788", forn: "Ellen Cristina Lobo Queiroz", prot: "1794333760", comp: "Sim", valor: 4500, ret: "Correto", venc: "2026-11-11" },
+    { d: "2026-11-10", sol: "David Casal", totvs: "276", forn: "ALARES INTERNET S/A", prot: "1794333830", comp: "Sim", valor: 114.99, ret: "Correto", venc: "2026-11-11" },
+    { d: "2026-11-10", sol: "David Casal", totvs: "1004", forn: "GNET MAIS TELECOM LTDA", prot: "1794335611", comp: "Sim", valor: 139.9, ret: "Correto", venc: "2026-11-13" },
+    { d: "2026-11-10", sol: "Jonathan", totvs: "590", forn: "Lesso Luiz da Silva", prot: "1794337378", comp: "Sim", valor: 26713.71, ret: "Correto", venc: "2026-11-12" },
+    { d: "2026-11-10", sol: "Henrique Guarnieri", totvs: "1842", forn: "Milagres e Machado Sociedade de Advogados", prot: "1794338134", comp: "Sim", valor: 450, ret: "Correto", venc: "2026-11-12" },
+    { d: "2026-11-10", sol: "Jonathan", totvs: "1843", forn: "Mercado Pago", prot: "1794340329", comp: "Não", valor: 930.99, ret: "Correto", venc: "2026-11-13" },
+    { d: "2026-11-10", sol: "Vitor Miranda", totvs: "1699", forn: "Allianz Seguros S.A", prot: "1794345095", comp: "Não", valor: 54810.58, ret: "Correto", venc: "2026-10-30" },
+    { d: "2026-11-10", sol: "Vitor Miranda", totvs: "1679", forn: "Allianz Seguros S.A", prot: "1794345271", comp: "Não", valor: 60567.64, ret: "Correto", venc: "2026-10-30" },
+    { d: "2026-11-11", sol: "David Casal", totvs: "1846", forn: "R. A. FRANCISCO LTDA", prot: "1794404715", comp: "Sim", valor: 1513, ret: "Correto", venc: "2026-11-20" },
+    { d: "2026-11-11", sol: "Amanda Chagas", totvs: "1844", forn: "PREFEITURA UBERLÂNDIA", prot: "1794406171", comp: "Sim", valor: 136308.11, ret: "Correto", venc: "2026-11-11" }
   ];
 
   var RET = ["Correto", "Incorreto", "Sem retorno"];
@@ -2408,7 +2431,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     q: document.getElementById("f-q"),
     count: document.getElementById("f-count"), clear: document.getElementById("f-clear")
   };
-  var DEFAULTS = { from: "2026-06-26", to: "2026-11-10" };
+  var DEFAULTS = { from: "2026-06-26", to: "2026-11-11" };
 
   function fillSelect(el, values) {
     values.forEach(function (v) {
