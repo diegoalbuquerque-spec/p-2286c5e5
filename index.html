@@ -437,7 +437,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
 
     <div class="note">
       <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.4"/><path d="M8 4.6v4.2M8 11.2v.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 11/11/2026 22h10. São 1545 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
+      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 12/11/2026 16h14. São 1553 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
     </div>
 
     <div class="filters">
@@ -593,7 +593,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
 (function () {
   "use strict";
 
-  var TODAY = "2026-11-11";
+  var TODAY = "2026-11-12";
   var ROWS = [
     { d: "2026-06-26", sol: "Diego Albuquerque", totvs: "123456", forn: "", prot: "1782516457", comp: "Sim", valor: 1256, ret: "Incorreto", venc: null },
     { d: "2026-06-30", sol: "Rafaella Rodrigues", totvs: "2222222", forn: "", prot: "1782827638", comp: "Sim", valor: 42556.2, ret: "Correto", venc: null },
@@ -2020,6 +2020,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     { d: "2026-11-03", sol: "David Casal", totvs: "169", forn: "DANILO FERNANDES LOPES", prot: "1793718686", comp: "Sim", valor: 2500, ret: "Correto", venc: "2026-11-10" },
     { d: "2026-11-03", sol: "Denise Valverde", totvs: "1747", forn: "26641981", prot: "1793718759", comp: "Não", valor: 390, ret: "Correto", venc: "2026-11-20" },
     { d: "2026-11-03", sol: "David Casal", totvs: "153", forn: "BARBARA REGINA GONCALVES DA SILVA BARROS", prot: "1793723975", comp: "Sim", valor: 3000, ret: "Correto", venc: "2026-11-10" },
+    { d: "2026-11-03", sol: "David Casal", totvs: "1789", forn: "BRASPRESS TRANSPORTES URGENTES LTDA", prot: "1793725694", comp: "Sim", valor: 90.7, ret: "Correto", venc: "2026-11-06" },
     { d: "2026-11-03", sol: "David Casal", totvs: "939", forn: "NUCLEO FORTE HEITHOR LTDA", prot: "1793727349", comp: "Sim", valor: 16000, ret: "Correto", venc: "2026-11-06" },
     { d: "2026-11-03", sol: "David Casal", totvs: "796", forn: "ENERGISA MATO GROSSO - DISTRIBUIDORA DE ENERGIA S.", prot: "1793729129", comp: "Sim", valor: 2822.52, ret: "Correto", venc: "2026-11-16" },
     { d: "2026-11-03", sol: "David Casal", totvs: "198", forn: "CEMIG DISTRIBUICAO S.A", prot: "1793729831", comp: "Sim", valor: 170.94, ret: "Correto", venc: "2026-11-10" },
@@ -2106,6 +2107,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     { d: "2026-11-10", sol: "David Casal", totvs: "159", forn: "IGOR MANHANINI PASCHOAL", prot: "1794316719", comp: "Sim", valor: 3000, ret: "Correto", venc: "2026-11-13" },
     { d: "2026-11-10", sol: "David Casal", totvs: "163", forn: "NIRLENE DOS REIS SILVA E ALMEIDA", prot: "1794316857", comp: "Sim", valor: 4078, ret: "Incorreto", venc: "2026-11-13" },
     { d: "2026-11-10", sol: "David Casal", totvs: "112", forn: "ANAUAC RIBEIRO DE SOUZA", prot: "1794317118", comp: "Sim", valor: 5379.84, ret: "Correto", venc: "2026-11-13" },
+    { d: "2026-11-10", sol: "David Casal", totvs: "165", forn: "ESPACO IMOVEIS LTDA", prot: "1794317254", comp: "Sim", valor: 4603.62, ret: "Incorreto", venc: "2026-11-13" },
     { d: "2026-11-10", sol: "David Casal", totvs: "752", forn: "COMPANHIA ITABIRANA DE TELECOMUNICACOES LTDA", prot: "1794317850", comp: "Sim", valor: 109.9, ret: "Correto", venc: "2026-11-13" },
     { d: "2026-11-10", sol: "David Casal", totvs: "1710", forn: "PLANO MAIOR EMPREENDIMENTOS IMOBILIARIOS LTDA", prot: "1794318419", comp: "Sim", valor: 3250, ret: "Correto", venc: "2026-11-11" },
     { d: "2026-11-10", sol: "David Casal", totvs: "335", forn: "C HOKI DA COSTA E CIA LTDA", prot: "1794319149", comp: "Sim", valor: 150, ret: "Correto", venc: "2026-11-20" },
@@ -2139,7 +2141,13 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     { d: "2026-11-11", sol: "David Casal", totvs: "165", forn: "ESPACO IMOVEIS LTDA", prot: "1794406857", comp: "Sim", valor: 10550, ret: "Correto", venc: "2026-11-15" },
     { d: "2026-11-11", sol: "David Casal", totvs: "272", forn: "BRISANET SERVICOS DE TELECOMUNICACOES S.A.", prot: "1794407639", comp: "Sim", valor: 130, ret: "Correto", venc: "2026-11-15" },
     { d: "2026-11-11", sol: "David Casal", totvs: "334", forn: "CLARO NXT TELECOMUNICACOES S/A", prot: "1794415286", comp: "Sim", valor: 127.79, ret: "Correto", venc: "2026-11-20" },
-    { d: "2026-11-11", sol: "Jonathan", totvs: "126", forn: "Antonio Nicodemos", prot: "1794415741", comp: "Não", valor: 17190.05, ret: "Correto", venc: "2026-11-13" }
+    { d: "2026-11-11", sol: "Jonathan", totvs: "126", forn: "Antonio Nicodemos", prot: "1794415741", comp: "Não", valor: 17190.05, ret: "Correto", venc: "2026-11-13" },
+    { d: "2026-11-11", sol: "Jonathan", totvs: "126", forn: "Antonio Nicodemos", prot: "1794416016", comp: "Sim", valor: 17040.21, ret: "Correto", venc: "2026-11-13" },
+    { d: "2026-11-11", sol: "Jonathan", totvs: "181", forn: "Walter Carlos da Rocha", prot: "1794416383", comp: "Não", valor: 7924.3, ret: "Correto", venc: "2026-11-13" },
+    { d: "2026-11-11", sol: "Jonathan", totvs: "181", forn: "Walter Carlos da Rocha", prot: "1794416710", comp: "Não", valor: 7860.62, ret: "Correto", venc: "2026-11-13" },
+    { d: "2026-11-11", sol: "Jonathan", totvs: "159", forn: "Igor Manhanini", prot: "1794418280", comp: "Não", valor: 3585.6, ret: "Correto", venc: "2026-11-13" },
+    { d: "2026-11-11", sol: "Jonathan", totvs: "111", forn: "Wagner Zacura Luiz", prot: "1794421910", comp: "Não", valor: 4996.6, ret: "Correto", venc: "2026-11-13" },
+    { d: "2026-11-11", sol: "Vitor Miranda", totvs: "1821", forn: "CONCEITO TRANSPORTES LOG LTDA", prot: "1794431826", comp: "Não", valor: 256018, ret: "Correto", venc: "2026-11-12" }
   ];
 
   var RET = ["Correto", "Incorreto", "Sem retorno"];
