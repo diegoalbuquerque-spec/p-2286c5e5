@@ -437,15 +437,15 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
 
     <div class="note">
       <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.4"/><path d="M8 4.6v4.2M8 11.2v.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 12/11/2026 16h14. São 1553 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
+      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 13/11/2026 15h51. São 1569 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
     </div>
 
     <div class="filters">
       <div class="ctl range">
         <span class="k">Período</span>
-        <input type="date" id="f-from" aria-label="Data inicial" min="2026-06-26" max="2026-11-11" value="2026-06-26">
+        <input type="date" id="f-from" aria-label="Data inicial" min="2026-06-26" max="2026-11-13" value="2026-06-26">
         <span class="dash">–</span>
-        <input type="date" id="f-to" aria-label="Data final" min="2026-06-26" max="2026-11-11" value="2026-11-11">
+        <input type="date" id="f-to" aria-label="Data final" min="2026-06-26" max="2026-11-13" value="2026-11-13">
       </div>
       <div class="ctl">
         <span class="k">Retorno</span>
@@ -593,7 +593,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
 (function () {
   "use strict";
 
-  var TODAY = "2026-11-12";
+  var TODAY = "2026-11-13";
   var ROWS = [
     { d: "2026-06-26", sol: "Diego Albuquerque", totvs: "123456", forn: "", prot: "1782516457", comp: "Sim", valor: 1256, ret: "Incorreto", venc: null },
     { d: "2026-06-30", sol: "Rafaella Rodrigues", totvs: "2222222", forn: "", prot: "1782827638", comp: "Sim", valor: 42556.2, ret: "Correto", venc: null },
@@ -2143,11 +2143,27 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     { d: "2026-11-11", sol: "David Casal", totvs: "334", forn: "CLARO NXT TELECOMUNICACOES S/A", prot: "1794415286", comp: "Sim", valor: 127.79, ret: "Correto", venc: "2026-11-20" },
     { d: "2026-11-11", sol: "Jonathan", totvs: "126", forn: "Antonio Nicodemos", prot: "1794415741", comp: "Não", valor: 17190.05, ret: "Correto", venc: "2026-11-13" },
     { d: "2026-11-11", sol: "Jonathan", totvs: "126", forn: "Antonio Nicodemos", prot: "1794416016", comp: "Sim", valor: 17040.21, ret: "Correto", venc: "2026-11-13" },
+    { d: "2026-11-11", sol: "David Casal", totvs: "273", forn: "BRISANET SERVICOS DE TELECOMUNICACOES S.A.", prot: "1794416128", comp: "Sim", valor: 150, ret: "Correto", venc: "2026-11-15" },
     { d: "2026-11-11", sol: "Jonathan", totvs: "181", forn: "Walter Carlos da Rocha", prot: "1794416383", comp: "Não", valor: 7924.3, ret: "Correto", venc: "2026-11-13" },
+    { d: "2026-11-11", sol: "David Casal", totvs: "313", forn: "BRISANET SERVICOS DE TELECOMUNICACOES S.A.", prot: "1794416479", comp: "Sim", valor: 149.89, ret: "Correto", venc: "2026-11-15" },
     { d: "2026-11-11", sol: "Jonathan", totvs: "181", forn: "Walter Carlos da Rocha", prot: "1794416710", comp: "Não", valor: 7860.62, ret: "Correto", venc: "2026-11-13" },
+    { d: "2026-11-11", sol: "David Casal", totvs: "294", forn: "BRISANET SERVICOS DE TELECOMUNICACOES S.A.", prot: "1794417018", comp: "Sim", valor: 180, ret: "Correto", venc: "2026-11-15" },
+    { d: "2026-11-11", sol: "David Casal", totvs: "312", forn: "BRISANET SERVICOS DE TELECOMUNICACOES S.A.", prot: "1794417200", comp: "Sim", valor: 180, ret: "Correto", venc: "2026-11-14" },
+    { d: "2026-11-11", sol: "Jonathan", totvs: "1704", forn: "Michael Madson", prot: "1794417394", comp: "Sim", valor: 3500, ret: "Correto", venc: "2026-11-13" },
     { d: "2026-11-11", sol: "Jonathan", totvs: "159", forn: "Igor Manhanini", prot: "1794418280", comp: "Não", valor: 3585.6, ret: "Correto", venc: "2026-11-13" },
+    { d: "2026-11-11", sol: "David Casal", totvs: "209", forn: "COMPANHIA DE SANEAMENTO DE MINAS GERAIS - COPASA", prot: "1794419827", comp: "Não", valor: 102.62, ret: "Correto", venc: "2026-11-14" },
+    { d: "2026-11-11", sol: "David Casal", totvs: "250", forn: "COMPANHIA DE SANEAMENTO DE MINAS GERAIS COPASA MG", prot: "1794420988", comp: "Sim", valor: 149, ret: "Correto", venc: "2026-11-14" },
     { d: "2026-11-11", sol: "Jonathan", totvs: "111", forn: "Wagner Zacura Luiz", prot: "1794421910", comp: "Não", valor: 4996.6, ret: "Correto", venc: "2026-11-13" },
-    { d: "2026-11-11", sol: "Vitor Miranda", totvs: "1821", forn: "CONCEITO TRANSPORTES LOG LTDA", prot: "1794431826", comp: "Não", valor: 256018, ret: "Correto", venc: "2026-11-12" }
+    { d: "2026-11-11", sol: "David Casal", totvs: "259", forn: "COMPANHIA DE SANEAMENTO DE MINAS GERAIS COPASA MG", prot: "1794422381", comp: "Sim", valor: 32.76, ret: "Correto", venc: "2026-11-14" },
+    { d: "2026-11-11", sol: "David Casal", totvs: "1365", forn: "COMPANHIA DE SANEAMENTO DE MINAS GERAIS COPASA MG", prot: "1794422465", comp: "Sim", valor: 179.75, ret: "Correto", venc: "2026-11-14" },
+    { d: "2026-11-11", sol: "Amanda Chagas", totvs: "1848", forn: "totvs", prot: "1794422889", comp: "Sim", valor: 37829.16, ret: "Correto", venc: "2026-11-16" },
+    { d: "2026-11-11", sol: "Vitor Miranda", totvs: "1821", forn: "CONCEITO TRANSPORTES LOG LTDA", prot: "1794431826", comp: "Não", valor: 256018, ret: "Correto", venc: "2026-11-12" },
+    { d: "2026-11-13", sol: "Jaqueline Tomaz", totvs: "1864", forn: "caixa economica", prot: "1794572902", comp: "Não", valor: 1060.09, ret: "Correto", venc: "2026-11-16" },
+    { d: "2026-11-13", sol: "Jaqueline Tomaz", totvs: "1865", forn: "caixa economica", prot: "1794573032", comp: "Não", valor: 178.82, ret: "Correto", venc: "2026-11-16" },
+    { d: "2026-11-13", sol: "Jaqueline Tomaz", totvs: "1867", forn: "caixa economica", prot: "1794573732", comp: "Não", valor: 655.43, ret: "Correto", venc: "2026-11-16" },
+    { d: "2026-11-13", sol: "Jaqueline Tomaz", totvs: "1869", forn: "caixa economica", prot: "1794573790", comp: "Não", valor: 120.6, ret: "Correto", venc: "2026-11-16" },
+    { d: "2026-11-13", sol: "Jaqueline Tomaz", totvs: "1870", forn: "CAIXA ECONOMICA", prot: "1794573874", comp: "Não", valor: 180.65, ret: "Correto", venc: "2026-11-16" },
+    { d: "2026-11-13", sol: "Jaqueline Tomaz", totvs: "1875", forn: "CAIXA ECONOMICA", prot: "1794580039", comp: "Não", valor: 289.11, ret: "Correto", venc: "2026-11-13" }
   ];
 
   var RET = ["Correto", "Incorreto", "Sem retorno"];
@@ -2443,7 +2459,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     q: document.getElementById("f-q"),
     count: document.getElementById("f-count"), clear: document.getElementById("f-clear")
   };
-  var DEFAULTS = { from: "2026-06-26", to: "2026-11-11" };
+  var DEFAULTS = { from: "2026-06-26", to: "2026-11-13" };
 
   function fillSelect(el, values) {
     values.forEach(function (v) {
