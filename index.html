@@ -437,15 +437,15 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
 
     <div class="note">
       <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.4"/><path d="M8 4.6v4.2M8 11.2v.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 18/11/2026 16h40. São 1665 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
+      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 19/11/2026 16h40. São 1670 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
     </div>
 
     <div class="filters">
       <div class="ctl range">
         <span class="k">Período</span>
-        <input type="date" id="f-from" aria-label="Data inicial" min="2026-06-26" max="2026-11-18" value="2026-06-26">
+        <input type="date" id="f-from" aria-label="Data inicial" min="2026-06-26" max="2026-11-19" value="2026-06-26">
         <span class="dash">–</span>
-        <input type="date" id="f-to" aria-label="Data final" min="2026-06-26" max="2026-11-18" value="2026-11-18">
+        <input type="date" id="f-to" aria-label="Data final" min="2026-06-26" max="2026-11-19" value="2026-11-19">
       </div>
       <div class="ctl">
         <span class="k">Retorno</span>
@@ -593,7 +593,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
 (function () {
   "use strict";
 
-  var TODAY = "2026-11-18";
+  var TODAY = "2026-11-19";
   var ROWS = [
     { d: "2026-06-26", sol: "Diego Albuquerque", totvs: "123456", forn: "", prot: "1782516457", comp: "Sim", valor: 1256, ret: "Incorreto", venc: null },
     { d: "2026-06-30", sol: "Rafaella Rodrigues", totvs: "2222222", forn: "", prot: "1782827638", comp: "Sim", valor: 42556.2, ret: "Correto", venc: null },
@@ -2252,14 +2252,19 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     { d: "2026-11-17", sol: "David Casal", totvs: "311", forn: "CONECTA MINAS GERAIS LTDA", prot: "1794937675", comp: "Não", valor: 129, ret: "Correto", venc: "2026-11-20" },
     { d: "2026-11-17", sol: "David Casal", totvs: "866", forn: "LSP FRANCHISING E SERVICOS LTDA.", prot: "1794938635", comp: "Sim", valor: 2915.52, ret: "Correto", venc: "2026-11-30" },
     { d: "2026-11-17", sol: "David Casal", totvs: "909", forn: "LSP FRANCHISING E SERVICOS LTDA.", prot: "1794938700", comp: "Sim", valor: 2915.52, ret: "Correto", venc: "2026-11-30" },
+    { d: "2026-11-17", sol: "David Casal", totvs: "1932", forn: "LOCAL NET E SERVICOS DE MULTIMIDIAS LTDA", prot: "1794939209", comp: "Sim", valor: 64.95, ret: "Correto", venc: "2026-11-20" },
     { d: "2026-11-17", sol: "Keyla Santos", totvs: "1927", forn: "UBER DO BRASIL", prot: "1794940218", comp: "Não", valor: 9175.92, ret: "Correto", venc: "2026-12-05" },
     { d: "2026-11-17", sol: "Keyla Santos", totvs: "1928", forn: "CONTROL ID - RELÓGIOS DE PONTO", prot: "1794940437", comp: "Não", valor: 8390.13, ret: "Correto", venc: "2026-11-30" },
     { d: "2026-11-17", sol: "David Casal", totvs: "789", forn: "FORIN E SOUZA EMPREENDIMENTOS IMOBILIARIOS LTDA", prot: "1794941471", comp: "Sim", valor: 9000, ret: "Correto", venc: "2026-11-20" },
     { d: "2026-11-17", sol: "Keyla Santos", totvs: "1929", forn: "METADADOS ASSESSORIA", prot: "1794941917", comp: "Não", valor: 9681.8, ret: "Correto", venc: "2026-11-20" },
+    { d: "2026-11-17", sol: "David Casal", totvs: "789", forn: "FORIN E SOUZA EMPREENDIMENTOS IMOBILIARIOS LTDA", prot: "1794941975", comp: "Sim", valor: 9000, ret: "Correto", venc: "2026-12-20" },
     { d: "2026-11-17", sol: "David Casal", totvs: "265", forn: "COMPANHIA DE SANEAMENTO BASICO DO ESTADO DE SAO PA", prot: "1794942663", comp: "Sim", valor: 222.29, ret: "Correto", venc: "2026-11-23" },
     { d: "2026-11-17", sol: "Keyla Santos", totvs: "1930", forn: "ONFLY TECNOLOGIA", prot: "1794944103", comp: "Não", valor: 31636.37, ret: "Correto", venc: "2026-11-23" },
     { d: "2026-11-18", sol: "Sthéfani Cruz", totvs: "1933", forn: "SHIPPIFY TECNOLOGIA LTDA - UBERLANDIA", prot: "1795000552", comp: "Sim", valor: 17033.44, ret: "Correto", venc: "2026-11-18" },
-    { d: "2026-11-18", sol: "Pamela de Paula", totvs: "762", forn: "Venddor", prot: "1795012177", comp: "Não", valor: 14573.39, ret: "Correto", venc: "2026-11-16" }
+    { d: "2026-11-18", sol: "Pamela de Paula", totvs: "762", forn: "Venddor", prot: "1795012177", comp: "Não", valor: 14573.39, ret: "Correto", venc: "2026-11-16" },
+    { d: "2026-11-18", sol: "Jaqueline Tomaz", totvs: "1941", forn: "caixa economica", prot: "1795027166", comp: "Não", valor: 30.94, ret: "Correto", venc: "2026-11-19" },
+    { d: "2026-11-18", sol: "Jaqueline Tomaz", totvs: "1942", forn: "CAIXA ECONOMICA", prot: "1795027220", comp: "Não", valor: 86.57, ret: "Correto", venc: "2026-11-19" },
+    { d: "2026-11-19", sol: "Emily Rebeca", totvs: "287", forn: "MAXXNET", prot: "1795094372", comp: "Não", valor: 120, ret: "Incorreto", venc: "2026-11-19" }
   ];
 
   var RET = ["Correto", "Incorreto", "Sem retorno"];
@@ -2555,7 +2560,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     q: document.getElementById("f-q"),
     count: document.getElementById("f-count"), clear: document.getElementById("f-clear")
   };
-  var DEFAULTS = { from: "2026-06-26", to: "2026-11-18" };
+  var DEFAULTS = { from: "2026-06-26", to: "2026-11-19" };
 
   function fillSelect(el, values) {
     values.forEach(function (v) {
