@@ -437,15 +437,15 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
 
     <div class="note">
       <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.4"/><path d="M8 4.6v4.2M8 11.2v.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 24/11/2026 18h37. São 1726 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
+      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 25/11/2026 17h45. São 1765 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
     </div>
 
     <div class="filters">
       <div class="ctl range">
         <span class="k">Período</span>
-        <input type="date" id="f-from" aria-label="Data inicial" min="2026-06-26" max="2026-11-24" value="2026-06-26">
+        <input type="date" id="f-from" aria-label="Data inicial" min="2026-06-26" max="2026-11-25" value="2026-06-26">
         <span class="dash">–</span>
-        <input type="date" id="f-to" aria-label="Data final" min="2026-06-26" max="2026-11-24" value="2026-11-24">
+        <input type="date" id="f-to" aria-label="Data final" min="2026-06-26" max="2026-11-25" value="2026-11-25">
       </div>
       <div class="ctl">
         <span class="k">Retorno</span>
@@ -593,7 +593,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
 (function () {
   "use strict";
 
-  var TODAY = "2026-11-24";
+  var TODAY = "2026-11-25";
   var ROWS = [
     { d: "2026-06-26", sol: "Diego Albuquerque", totvs: "123456", forn: "", prot: "1782516457", comp: "Sim", valor: 1256, ret: "Incorreto", venc: null },
     { d: "2026-06-30", sol: "Rafaella Rodrigues", totvs: "2222222", forn: "", prot: "1782827638", comp: "Sim", valor: 42556.2, ret: "Correto", venc: null },
@@ -2320,7 +2320,46 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     { d: "2026-11-23", sol: "David Casal", totvs: "245", forn: "COMPANHIA DE SANEAMENTO DE MINAS GERAIS COPASA MG", prot: "1795454195", comp: "Sim", valor: 115.32, ret: "Correto", venc: "2026-11-26" },
     { d: "2026-11-23", sol: "Angel Francischini", totvs: "1970", forn: "RICARDO MANUEL GOMES TECNOLOGIA DA INFORMACAO LTDA - 60.372.300/0001-23", prot: "1795468223", comp: "Não", valor: 4921.44, ret: "Correto", venc: "2026-11-26" },
     { d: "2026-11-24", sol: "Amanda Chagas", totvs: "1885", forn: "prefeitura de uberlândia", prot: "1795526097", comp: "Sim", valor: 5686.07, ret: "Correto", venc: "2026-11-30" },
-    { d: "2026-11-24", sol: "Amanda Chagas", totvs: "1886", forn: "prefeitura Maceió", prot: "1795526284", comp: "Sim", valor: 39114.6, ret: "Correto", venc: "2026-11-30" }
+    { d: "2026-11-24", sol: "Amanda Chagas", totvs: "1886", forn: "prefeitura Maceió", prot: "1795526284", comp: "Sim", valor: 39114.6, ret: "Correto", venc: "2026-11-30" },
+    { d: "2026-11-24", sol: "Amanda Chagas", totvs: "1887", forn: "prefeitura uberaba", prot: "1795526446", comp: "Sim", valor: 2552.6, ret: "Correto", venc: "2026-11-30" },
+    { d: "2026-11-24", sol: "Amanda Chagas", totvs: "1891", forn: "prefeitura belo horizonte", prot: "1795526679", comp: "Sim", valor: 757.47, ret: "Correto", venc: "2026-11-30" },
+    { d: "2026-11-24", sol: "David Casal", totvs: "1773", forn: "BANDEIRANTE INDUSTRIA E COMERCIO DE PLASTICOS E PA", prot: "1795527334", comp: "Sim", valor: 2996.53, ret: "Correto", venc: "2026-11-27" },
+    { d: "2026-11-24", sol: "David Casal", totvs: "594", forn: "CO-SERVICES DO BRASIL SERVICOS COMBINADOS DE APOIO A EDIFIC", prot: "1795527815", comp: "Não", valor: 4959.32, ret: "Correto", venc: "2026-11-27" },
+    { d: "2026-11-24", sol: "Amanda Chagas", totvs: "1888", forn: "prefeitura Belo Horizonte", prot: "1795528555", comp: "Sim", valor: 38495.18, ret: "Correto", venc: "2026-11-30" },
+    { d: "2026-11-24", sol: "Amanda Chagas", totvs: "1892", forn: "prefeitura Belo Horizonte", prot: "1795528729", comp: "Sim", valor: 2930.62, ret: "Correto", venc: "2026-11-30" },
+    { d: "2026-11-24", sol: "Keyla Santos", totvs: "1962", forn: "FUNDACAO CDL BH", prot: "1795528846", comp: "Não", valor: 2688.07, ret: "Correto", venc: "2026-12-20" },
+    { d: "2026-11-24", sol: "Keyla Santos", totvs: "1965", forn: "PREVINSA CONSULTORIA", prot: "1795529048", comp: "Não", valor: 1079.27, ret: "Correto", venc: "2026-11-26" },
+    { d: "2026-11-24", sol: "Milena Alves", totvs: "202", forn: "ENERGISA MATO GROSSO DO SUL - DISTR. DE ENERGIA S.A.", prot: "1795529126", comp: "Sim", valor: 284.96, ret: "Correto", venc: "2026-11-06" },
+    { d: "2026-11-24", sol: "Keyla Santos", totvs: "1966", forn: "LÍDER SAÚDE", prot: "1795529407", comp: "Não", valor: 11829.64, ret: "Correto", venc: "2026-12-25" },
+    { d: "2026-11-24", sol: "Keyla Santos", totvs: "1968", forn: "VIA DE ACESSO", prot: "1795530839", comp: "Não", valor: 442, ret: "Correto", venc: "2026-12-01" },
+    { d: "2026-11-24", sol: "Keyla Santos", totvs: "1969", forn: "ONFLY TECNOLOGIA", prot: "1795531031", comp: "Não", valor: 3761.06, ret: "Correto", venc: "2026-12-02" },
+    { d: "2026-11-24", sol: "David Casal", totvs: "318", forn: "MASTER INTERNET - CSC GESTAO INTEGRADA S/A", prot: "1795531998", comp: "Sim", valor: 145.26, ret: "Correto", venc: "2026-11-27" },
+    { d: "2026-11-24", sol: "David Casal", totvs: "314", forn: "MASTER INTERNET - CSC GESTAO INTEGRADA S/A", prot: "1795532414", comp: "Sim", valor: 116.39, ret: "Correto", venc: "2026-11-27" },
+    { d: "2026-11-24", sol: "David Casal", totvs: "1975", forn: "49.403.625 GUSTAVO GELLER ALGAYER", prot: "1795538182", comp: "Sim", valor: 12000, ret: "Correto", venc: "2026-11-27" },
+    { d: "2026-11-24", sol: "David Casal", totvs: "1971", forn: "49.403.625 GUSTAVO GELLER ALGAYER", prot: "1795538299", comp: "Sim", valor: 6000, ret: "Correto", venc: "2026-12-10" },
+    { d: "2026-11-24", sol: "David Casal", totvs: "1974", forn: "49.403.625 GUSTAVO GELLER ALGAYER", prot: "1795539127", comp: "Sim", valor: 150, ret: "Correto", venc: "2026-11-10" },
+    { d: "2026-11-24", sol: "David Casal", totvs: "1973", forn: "MONTEIRO INDUSTRIA DE BOBINAS E ETIQUETAS LTDA", prot: "1795539764", comp: "Sim", valor: 300, ret: "Incorreto", venc: "2026-11-27" },
+    { d: "2026-11-24", sol: "David Casal", totvs: "1973", forn: "MONTEIRO INDUSTRIA DE BOBINAS E ETIQUETAS LTDA", prot: "1795539791", comp: "Sim", valor: 300, ret: "Incorreto", venc: "2026-12-21" },
+    { d: "2026-11-24", sol: "David Casal", totvs: "1976", forn: "MONTEIRO INDUSTRIA DE BOBINAS E ETIQUETAS LTDA", prot: "1795540052", comp: "Não", valor: 196, ret: "Incorreto", venc: "2026-11-27" },
+    { d: "2026-11-24", sol: "David Casal", totvs: "917", forn: "SUPER PALETEIRA COMERCIO E LOCACAO DE MAQUINAS LTD", prot: "1795540529", comp: "Sim", valor: 800, ret: "Correto", venc: "2026-11-27" },
+    { d: "2026-11-24", sol: "David Casal", totvs: "918", forn: "SUPER PALETEIRA COMERCIO E LOCACAO DE MAQUINAS LTD", prot: "1795540630", comp: "Sim", valor: 800, ret: "Correto", venc: "2026-12-14" },
+    { d: "2026-11-24", sol: "David Casal", totvs: "1973", forn: "DISKTRANS", prot: "1795540900", comp: "Sim", valor: 302.12, ret: "Incorreto", venc: "2026-11-27" },
+    { d: "2026-11-24", sol: "David Casal", totvs: "1973", forn: "DISKTRANS", prot: "1795540990", comp: "Sim", valor: 302.12, ret: "Incorreto", venc: "2026-12-08" },
+    { d: "2026-11-24", sol: "Jaqueline Tomaz", totvs: "1977", forn: "CAIXA ECONOMICA", prot: "1795542230", comp: "Não", valor: 18.45, ret: "Correto", venc: "2026-11-27" },
+    { d: "2026-11-24", sol: "Jaqueline Tomaz", totvs: "1980", forn: "caixa economica", prot: "1795542320", comp: "Não", valor: 1561.16, ret: "Correto", venc: "2026-11-27" },
+    { d: "2026-11-24", sol: "David Casal", totvs: "288", forn: "ALGAR TELECOM S/A", prot: "1795542876", comp: "Sim", valor: 131.02, ret: "Correto", venc: "2026-11-27" },
+    { d: "2026-11-24", sol: "David Casal", totvs: "288", forn: "ALGAR TELECOM S/A", prot: "1795543036", comp: "Sim", valor: 127.08, ret: "Correto", venc: "2026-11-27" },
+    { d: "2026-11-24", sol: "David Casal", totvs: "701", forn: "GUARDIAN SECURITY LTDA - EPP", prot: "1795545333", comp: "Não", valor: 366.83, ret: "Correto", venc: "2026-12-10" },
+    { d: "2026-11-24", sol: "Angel Francischini", totvs: "1982", forn: "M C LOGISTICA INTELIGENTE LTDA - 45.372.816/0001-84", prot: "1795546235", comp: "Não", valor: 424.56, ret: "Correto", venc: "2026-11-26" },
+    { d: "2026-11-24", sol: "Gabriel dos Anjos", totvs: "1357", forn: "Correios", prot: "1795550673", comp: "Sim", valor: 9104.39, ret: "Incorreto", venc: "2026-11-23" },
+    { d: "2026-11-24", sol: "Amanda Chagas", totvs: "1893", forn: "prefeitura caruaru", prot: "1795553549", comp: "Sim", valor: 17019.62, ret: "Correto", venc: "2026-11-30" },
+    { d: "2026-11-24", sol: "Amanda Chagas", totvs: "1967", forn: "prefeitura Contagem", prot: "1795554368", comp: "Sim", valor: 48881.83, ret: "Correto", venc: "2026-11-30" },
+    { d: "2026-11-24", sol: "Amanda Chagas", totvs: "1963", forn: "receita federeal", prot: "1795554597", comp: "Sim", valor: 15365.84, ret: "Correto", venc: "2026-11-30" },
+    { d: "2026-11-24", sol: "Amanda Chagas", totvs: "1964", forn: "receita federal", prot: "1795554838", comp: "Sim", valor: 1599.68, ret: "Correto", venc: "2026-11-30" },
+    { d: "2026-11-25", sol: "Jonathan", totvs: "918", forn: "Super Paleteira", prot: "1795604246", comp: "Não", valor: 906.7, ret: "Correto", venc: "2026-11-25" },
+    { d: "2026-11-25", sol: "Jonathan", totvs: "1983", forn: "SMC IT", prot: "1795610581", comp: "Não", valor: 50560.77, ret: "Correto", venc: "2026-11-26" },
+    { d: "2026-11-25", sol: "Jonathan", totvs: "197", forn: "CEMIG", prot: "1795610818", comp: "Não", valor: 331.93, ret: "Correto", venc: "2026-12-11" },
+    { d: "2026-11-25", sol: "Jaqueline Tomaz", totvs: "1985", forn: "caixa economica", prot: "1795612559", comp: "Não", valor: 843.02, ret: "Correto", venc: "2026-11-27" }
   ];
 
   var RET = ["Correto", "Incorreto", "Sem retorno"];
@@ -2616,7 +2655,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     q: document.getElementById("f-q"),
     count: document.getElementById("f-count"), clear: document.getElementById("f-clear")
   };
-  var DEFAULTS = { from: "2026-06-26", to: "2026-11-24" };
+  var DEFAULTS = { from: "2026-06-26", to: "2026-11-25" };
 
   function fillSelect(el, values) {
     values.forEach(function (v) {
