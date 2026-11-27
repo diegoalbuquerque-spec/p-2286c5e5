@@ -437,15 +437,15 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
 
     <div class="note">
       <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.4"/><path d="M8 4.6v4.2M8 11.2v.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 26/11/2026 17h37. São 1765 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
+      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 27/11/2026 17h23. São 1789 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
     </div>
 
     <div class="filters">
       <div class="ctl range">
         <span class="k">Período</span>
-        <input type="date" id="f-from" aria-label="Data inicial" min="2026-06-26" max="2026-11-25" value="2026-06-26">
+        <input type="date" id="f-from" aria-label="Data inicial" min="2026-06-26" max="2026-11-26" value="2026-06-26">
         <span class="dash">–</span>
-        <input type="date" id="f-to" aria-label="Data final" min="2026-06-26" max="2026-11-25" value="2026-11-25">
+        <input type="date" id="f-to" aria-label="Data final" min="2026-06-26" max="2026-11-26" value="2026-11-26">
       </div>
       <div class="ctl">
         <span class="k">Retorno</span>
@@ -593,7 +593,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
 (function () {
   "use strict";
 
-  var TODAY = "2026-11-26";
+  var TODAY = "2026-11-27";
   var ROWS = [
     { d: "2026-06-26", sol: "Diego Albuquerque", totvs: "123456", forn: "", prot: "1782516457", comp: "Sim", valor: 1256, ret: "Incorreto", venc: null },
     { d: "2026-06-30", sol: "Rafaella Rodrigues", totvs: "2222222", forn: "", prot: "1782827638", comp: "Sim", valor: 42556.2, ret: "Correto", venc: null },
@@ -2359,7 +2359,31 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     { d: "2026-11-25", sol: "Jonathan", totvs: "918", forn: "Super Paleteira", prot: "1795604246", comp: "Não", valor: 906.7, ret: "Correto", venc: "2026-11-25" },
     { d: "2026-11-25", sol: "Jonathan", totvs: "1983", forn: "SMC IT", prot: "1795610581", comp: "Não", valor: 50560.77, ret: "Correto", venc: "2026-11-26" },
     { d: "2026-11-25", sol: "Jonathan", totvs: "197", forn: "CEMIG", prot: "1795610818", comp: "Não", valor: 331.93, ret: "Correto", venc: "2026-12-11" },
-    { d: "2026-11-25", sol: "Jaqueline Tomaz", totvs: "1985", forn: "caixa economica", prot: "1795612559", comp: "Não", valor: 843.02, ret: "Correto", venc: "2026-11-27" }
+    { d: "2026-11-25", sol: "Jaqueline Tomaz", totvs: "1985", forn: "caixa economica", prot: "1795612559", comp: "Não", valor: 843.02, ret: "Correto", venc: "2026-11-27" },
+    { d: "2026-11-25", sol: "Jonathan", totvs: "1987", forn: "Roger Markis", prot: "1795612914", comp: "Não", valor: 440, ret: "Correto", venc: "2026-11-30" },
+    { d: "2026-11-25", sol: "David Casal", totvs: "363", forn: "ENERGISA MINAS RIO - DISTRIBUIDORA DE ENERGIA S.A.", prot: "1795617850", comp: "Sim", valor: 226.93, ret: "Correto", venc: "2026-11-28" },
+    { d: "2026-11-25", sol: "David Casal", totvs: "363", forn: "ENERGISA MINAS RIO - DISTRIBUIDORA DE ENERGIA S.A.", prot: "1795617944", comp: "Sim", valor: 226.93, ret: "Correto", venc: "2026-11-28" },
+    { d: "2026-11-25", sol: "David Casal", totvs: "286", forn: "CLIENT CO SERVICOS DE REDE NORDESTE S.A.", prot: "1795618141", comp: "Sim", valor: 130, ret: "Correto", venc: "2026-11-30" },
+    { d: "2026-11-25", sol: "Kelly Diniz", totvs: "1527", forn: "MANUTENCAO DE PALETEIRA - OP SETE LAGOAS", prot: "1795623422", comp: "Sim", valor: 580, ret: "Correto", venc: "2026-11-27" },
+    { d: "2026-11-25", sol: "David Casal", totvs: "906", forn: "SERVICO AUTONOMO DE AGUA, ESGOTO E SANEAMENTO URBA", prot: "1795623580", comp: "Sim", valor: 132.02, ret: "Correto", venc: "2026-12-11" },
+    { d: "2026-11-25", sol: "David Casal", totvs: "906", forn: "SERVICO AUTONOMO DE AGUA, ESGOTO E SANEAMENTO URBA", prot: "1795623743", comp: "Sim", valor: 133.09, ret: "Incorreto", venc: "2026-12-11" },
+    { d: "2026-11-25", sol: "Jonathan", totvs: "1780", forn: "Paxar do Brasil", prot: "1795630154", comp: "Não", valor: 16423.78, ret: "Incorreto", venc: "2026-12-03" },
+    { d: "2026-11-25", sol: "Jonathan", totvs: "1780", forn: "paxar do Brasil", prot: "1795630335", comp: "Não", valor: 16423.78, ret: "Correto", venc: "2026-12-03" },
+    { d: "2026-11-25", sol: "Jonathan", totvs: "1780", forn: "Paxar do Brasil", prot: "1795630457", comp: "Não", valor: 16423.77, ret: "Correto", venc: "2027-01-02" },
+    { d: "2026-11-25", sol: "Jonathan", totvs: "1988", forn: "Paxar do Brasil", prot: "1795630558", comp: "Não", valor: 1800, ret: "Correto", venc: "2026-12-11" },
+    { d: "2026-11-25", sol: "David Casal", totvs: "1991", forn: "GO OFFICES LATAM S/A", prot: "1795634062", comp: "Sim", valor: 60, ret: "Correto", venc: "2026-11-30" },
+    { d: "2026-11-26", sol: "Milena Alves", totvs: "000327 - (001367)", forn: "EMPRESA DE SANEAMENTO DE MATO GROSSO DO SUL S.A. - SANESUL", prot: "1795671847", comp: "Não", valor: 57.83, ret: "Correto", venc: "2026-11-09" },
+    { d: "2026-11-26", sol: "Milena Alves", totvs: "000335 HOKINET", forn: "C. Hoki da Costa & CIA LTDA ME | CNPJ: 19.070.559/0001-16", prot: "1795672177", comp: "Não", valor: 150, ret: "Incorreto", venc: "2026-11-20" },
+    { d: "2026-11-26", sol: "Jonathan", totvs: "1315", forn: "OOPS internet", prot: "1795693139", comp: "Não", valor: 99.9, ret: "Correto", venc: "2026-11-30" },
+    { d: "2026-11-26", sol: "Jonathan", totvs: "877", forn: "Equatorial", prot: "1795693343", comp: "Não", valor: 446.72, ret: "Correto", venc: "2026-11-30" },
+    { d: "2026-11-26", sol: "David Casal", totvs: "256", forn: "SAAE", prot: "1795696665", comp: "Sim", valor: 397.8, ret: "Correto", venc: "2026-11-30" },
+    { d: "2026-11-26", sol: "David Casal", totvs: "1648", forn: "DME DISTRIBUICAO S.A. - DMED", prot: "1795698192", comp: "Sim", valor: 250.73, ret: "Correto", venc: "2026-11-30" },
+    { d: "2026-11-26", sol: "David Casal", totvs: "240", forn: "COMPANHIA DE SANEAMENTO MUNICIPAL - CESAMA", prot: "1795698736", comp: "Sim", valor: 137.89, ret: "Correto", venc: "2026-12-01" },
+    { d: "2026-11-26", sol: "Jonathan", totvs: "1788", forn: "Ellen Cristina", prot: "1795703140", comp: "Não", valor: 4500, ret: "Correto", venc: "2026-12-10" },
+    { d: "2026-11-26", sol: "Jaqueline Tomaz", totvs: "1997", forn: "Flash Tecnologia e Instituição de Pagamento LTDA", prot: "1795703294", comp: "Não", valor: 30000, ret: "Correto", venc: "2026-11-30" },
+    { d: "2026-11-26", sol: "Jaqueline Tomaz", totvs: "1998", forn: "Flash Tecnologia e Instituição de Pagamento LTDA", prot: "1795703460", comp: "Não", valor: 411580.81, ret: "Correto", venc: "2026-11-27" },
+    { d: "2026-11-26", sol: "Jonathan", totvs: "1937", forn: "Fredize empreendimentos", prot: "1795703604", comp: "Não", valor: 6500, ret: "Correto", venc: "2026-11-12" },
+    { d: "2026-11-26", sol: "David Casal", totvs: "1044", forn: "RESENDE E GONCALVES TECNOLOGIA LTDA", prot: "1795704788", comp: "Sim", valor: 199.9, ret: "Correto", venc: "2026-12-14" }
   ];
 
   var RET = ["Correto", "Incorreto", "Sem retorno"];
@@ -2655,7 +2679,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     q: document.getElementById("f-q"),
     count: document.getElementById("f-count"), clear: document.getElementById("f-clear")
   };
-  var DEFAULTS = { from: "2026-06-26", to: "2026-11-25" };
+  var DEFAULTS = { from: "2026-06-26", to: "2026-11-26" };
 
   function fillSelect(el, values) {
     values.forEach(function (v) {
