@@ -437,7 +437,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
 
     <div class="note">
       <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.4"/><path d="M8 4.6v4.2M8 11.2v.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 27/11/2026 17h23. São 1789 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
+      <div><b>Dados reais</b> da planilha <span class="mono">Envio de NF e Documentos</span>, lidos em 28/11/2026 16h13. São 1799 envios desde 26/06/2026 (12 linhas de teste ficaram de fora). Os filtros abaixo recalculam a página inteira.</div>
     </div>
 
     <div class="filters">
@@ -593,7 +593,7 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
 (function () {
   "use strict";
 
-  var TODAY = "2026-11-27";
+  var TODAY = "2026-11-28";
   var ROWS = [
     { d: "2026-06-26", sol: "Diego Albuquerque", totvs: "123456", forn: "", prot: "1782516457", comp: "Sim", valor: 1256, ret: "Incorreto", venc: null },
     { d: "2026-06-30", sol: "Rafaella Rodrigues", totvs: "2222222", forn: "", prot: "1782827638", comp: "Sim", valor: 42556.2, ret: "Correto", venc: null },
@@ -2383,7 +2383,17 @@ table th[data-ord="desc"]::after{ content:"\25BC"; }
     { d: "2026-11-26", sol: "Jaqueline Tomaz", totvs: "1997", forn: "Flash Tecnologia e Instituição de Pagamento LTDA", prot: "1795703294", comp: "Não", valor: 30000, ret: "Correto", venc: "2026-11-30" },
     { d: "2026-11-26", sol: "Jaqueline Tomaz", totvs: "1998", forn: "Flash Tecnologia e Instituição de Pagamento LTDA", prot: "1795703460", comp: "Não", valor: 411580.81, ret: "Correto", venc: "2026-11-27" },
     { d: "2026-11-26", sol: "Jonathan", totvs: "1937", forn: "Fredize empreendimentos", prot: "1795703604", comp: "Não", valor: 6500, ret: "Correto", venc: "2026-11-12" },
-    { d: "2026-11-26", sol: "David Casal", totvs: "1044", forn: "RESENDE E GONCALVES TECNOLOGIA LTDA", prot: "1795704788", comp: "Sim", valor: 199.9, ret: "Correto", venc: "2026-12-14" }
+    { d: "2026-11-26", sol: "David Casal", totvs: "1044", forn: "RESENDE E GONCALVES TECNOLOGIA LTDA", prot: "1795704788", comp: "Sim", valor: 199.9, ret: "Correto", venc: "2026-12-14" },
+    { d: "2026-11-26", sol: "Fernanda Eusebio", totvs: "1995", forn: "SWILE", prot: "1795704841", comp: "Não", valor: 36399.6, ret: "Correto", venc: "2026-11-27" },
+    { d: "2026-11-26", sol: "David Casal", totvs: "227", forn: "CESAR AUGUSTO DE ANDRADE LIMA", prot: "1795705062", comp: "Sim", valor: 4314.3, ret: "Correto", venc: "2026-12-18" },
+    { d: "2026-11-26", sol: "Jonathan", totvs: "1996", forn: "AJ SALES", prot: "1795705186", comp: "Não", valor: 2200, ret: "Correto", venc: "2026-12-05" },
+    { d: "2026-11-26", sol: "David Casal", totvs: "1994", forn: "64.422.692 MARCELO AUGUSTO SILVA RIBEIRO", prot: "1795705526", comp: "Não", valor: 600, ret: "Correto", venc: "2026-11-30" },
+    { d: "2026-11-26", sol: "Jonathan", totvs: "1786", forn: "Geraldo Gomes", prot: "1795705598", comp: "Não", valor: 5309.53, ret: "Correto", venc: "2026-11-05" },
+    { d: "2026-11-26", sol: "David Casal", totvs: "1993", forn: "59.886.429 PAULO SERGIO DOS SANTOS", prot: "1795705790", comp: "Sim", valor: 275, ret: "Correto", venc: "2026-11-30" },
+    { d: "2026-11-26", sol: "David Casal", totvs: "303", forn: "VERO S.A.", prot: "1795710761", comp: "Sim", valor: 161.96, ret: "Correto", venc: "2026-12-08" },
+    { d: "2026-11-26", sol: "David Casal", totvs: "1615", forn: "DIRECT PAPER INDUSTRIA E COMERCIO DE PAPEIS LTDA", prot: "1795712032", comp: "Não", valor: 1667.64, ret: "Correto", venc: "2026-12-01" },
+    { d: "2026-11-26", sol: "David Casal", totvs: "1615", forn: "DIRECT PAPER INDUSTRIA E COMERCIO DE PAPEIS LTDA", prot: "1795712074", comp: "Não", valor: 3335.28, ret: "Correto", venc: "2026-12-01" },
+    { d: "2026-11-26", sol: "David Casal", totvs: "1615", forn: "DIRECT PAPER INDUSTRIA E COMERCIO DE PAPEIS LTDA", prot: "1795712093", comp: "Não", valor: 1667.64, ret: "Correto", venc: "2026-12-01" }
   ];
 
   var RET = ["Correto", "Incorreto", "Sem retorno"];
